@@ -396,7 +396,7 @@
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
 			<property name="AITask-3" value="ApproachAndAttackSDX, Mods" data="class=Entity,0"   /> 
-			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" param1="Leader"/> 
+			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/> 
 			<property name="AITask-5" value="PatrolSDX, Mods"/> 
 			<property name="AITask-6" value="MaslowLevel1SDX, Mods"/> 
 			<property name="AITask-7" value="Look"/> 
@@ -516,7 +516,7 @@
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
 			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
-			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" param1="Entity,0" param2=""  />
+			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
 			<property name="AITask-7" value="MaslowLevel1SDX, Mods"/> 
@@ -607,8 +607,6 @@
 			<property name="LootListOnDeath" value="74"/>
 			<property name="Faction" value="none"/>
 		</entity_class>
-		
-		
 		<entity_class name="Hunter" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
@@ -649,7 +647,7 @@
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
 			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
-			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" param1="Entity,0" param2=""  /> 
+			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
 			<property name="AITask-7" value="MaslowLevel1SDX, Mods"/> 
@@ -767,8 +765,8 @@
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="ApproachAndAttackSDX, Mods" param1="Entity,0" param2=""  /> 
-			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
+			<property name="AITask-3" value="ApproachAndAttackSDX, Mods" data="class=Entity,0"   /> 
+			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/> 
 			<property name="AITask-5" value="PatrolSDX, Mods"/> 
 			<property name="AITask-6" value="MaslowLevel1SDX, Mods"/> 
 			<property name="AITask-7" value="Look"/> 
@@ -887,7 +885,7 @@
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
 			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
-			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" param1="Entity,0" param2=""  /> 
+			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
 			<property name="AITask-7" value="MaslowLevel1SDX, Mods"/> 
@@ -899,7 +897,6 @@
 			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
 			<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
-			
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
@@ -1010,7 +1007,7 @@
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
 			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
-			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" param1="Entity,0" param2=""  /> 
+			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
 			<property name="AITask-7" value="MaslowLevel1SDX, Mods"/> 
