@@ -3,9 +3,8 @@
     <author>Xyth/Sphereii</author>
     <name>Xyth NPCs</name>
     <description>Xyth NPC Mod</description>
-    <mod_version>1.21</mod_version>
-    <game_version>17.0</game_version>
-    <launcher_version>0.7.3</launcher_version>
+    <mod_version>1.5</mod_version>
+    <game_version>18.0</game_version>
   </info>
   <dependencies>
     <dependency>0-SphereIICore</dependency>
