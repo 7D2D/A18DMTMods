@@ -8,10 +8,9 @@
     <launcher_version>0.7.3</launcher_version>
   </info>
   <dependencies>
-    <dependency>SphereIICore</dependency>
-    <dependency>SDX_EntityAliveSDX</dependency>
-    <dependency>aXUi_Dialog</dependency>
-  </dependencies>
+    <dependency>0-SphereIICore</dependency>
+    <dependency>SphereII NPC Dialog Windows</dependency>
+   </dependencies>
   <hashes>
     <hash filename="Config\blocks.xml" hash="9483e91c13b711efe737cca6d84247dd" />
     <hash filename="Config\buffs.xml" hash="e521e8f7e82d418b42c67d182f6aa701" />

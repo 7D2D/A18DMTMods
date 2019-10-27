@@ -7,7 +7,7 @@
     <game_version>18.0</game_version>
   </info>
   <dependencies>
-    <dependency>SphereIICore</dependency>
+    <dependency>0-SphereIICore</dependency>
   </dependencies>
   <hashes>
     <hash filename="Config\entitygroups.xml" hash="60fdd00333a6cdf737e957bea736a178" />

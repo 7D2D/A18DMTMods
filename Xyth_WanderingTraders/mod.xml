@@ -7,8 +7,7 @@
     <game_version>18.0</game_version>
   </info>
   <dependencies>
-	<dependency>SphereIICore</dependency>
-    <dependency>SphereII Wandering Traders</dependency>
+    <dependency>0-SphereIICore</dependency>
   </dependencies>
   <hashes>
     <hash filename="Config\entityclasses.xml" hash="cb13808139194309cfde4b0c954069cd" />

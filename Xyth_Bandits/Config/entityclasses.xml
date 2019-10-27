@@ -2,7 +2,7 @@
 	<append xpath="/entity_classes">
 		<entity_class name="AshBandit">
 			<property name="UseModderUpdate" value="true" />
-			<property name="Class" value="EntityBanditsSDX,Mods"/>
+			<property name="Class" value="EntityBandit"/>
 			<property name="Mesh" value="#@modfolder:Resources/Bandits.unity3d?AshBandit_X" />			
 			<property name="Faction" value="bandits"/>
 			<property name="Tags" value="entity,bandits"/>
@@ -44,7 +44,7 @@
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityZombie,EntityNPC,EntityEnemyAnimal,EntityPlayer"/> 
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0,EntityEnemyAnimal,0,0"/>
 			<property name="AITarget-4" value=""/> 
 			<property name="AttackIndexes" value="2" /> 
 			<property name="SpecialAttackIndexes" value="0" />
@@ -130,7 +130,7 @@
 			<property name="Faction" value="bandits"/>
 			<property name="Tags" value="entity,bandit"/>
 			<property name="IsEnemyEntity" value="true"/>			
-			<property name="Class" value="EntityBanditsSDX,Mods"/>
+			<property name="Class" value="EntityBandit"/>
 			<property name="HandItem" value="handBanditMP7"/> 
 			<property name="MoveSpeed" value="0.25"/> 
 			<property name="MoveSpeedAggro" value=".8, .8"/> 
@@ -148,7 +148,7 @@
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityZombie,EntityNPC,EntityEnemyAnimal,EntityPlayer"/> 
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0,EntityEnemyAnimal,0,0"/>
 			<property name="AITarget-4" value=""/> 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="200"/>
@@ -184,7 +184,7 @@
 		</entity_class> 
 		<entity_class name="BanditArcher" extends="AshBandit" >
 			<property name="UseModderUpdate" value="true" />
-			<property name="Class" value="EntityBanditsSDX,Mods"/>
+			<property name="Class" value="EntityBandit"/>
 			<property name="Mesh" value="#@modfolder:Resources/Bandits.unity3d?BanditArcher_X" />
 			<property name="Faction" value="bandits"/>
 			<property name="Tags" value="entity,bandit"/>
@@ -196,7 +196,7 @@
 			<property name="AttackTimeoutDay" value="1.0"/> 
 			<property name="AttackTimeoutNight" value="1.0"/>
 			<property name="AITask-1" value="Swim"/>
-			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=4;minRange=3;maxRange=80"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=1;duration=4;minRange=3;maxRange=80"/>
 			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityNPC,0,EntityEnemyAnimal,0,EntityPlayer,0"/>
 			<property name="AITask-4" value="ApproachSpot"/>  
 			<property name="AITask-5" value="Look"/> 
@@ -206,7 +206,7 @@
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityZombie,EntityNPC,EntityEnemyAnimal,EntityPlayer"/> 
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0,EntityEnemyAnimal,0,0"/>
 			<property name="AITarget-4" value=""/> 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
@@ -245,7 +245,7 @@
 		</entity_class> 		
 		<entity_class name="BanditBoss" extends="AshBandit" >
 			<property name="UseModderUpdate" value="true" />
-			<property name="Class" value="EntityBanditsSDX,Mods"/>
+			<property name="Class" value="EntityBandit"/>
 			<property name="Mesh" value="#@modfolder:Resources/Bandits.unity3d?BanditBoss_X" />	
 			<property name="Faction" value="bandits"/>
 			<property name="Tags" value="entity,bandit"/>
@@ -267,7 +267,7 @@
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityZombie,EntityNPC,EntityEnemyAnimal,EntityPlayer"/> 
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0,EntityZombie,0,0,EntityEnemyAnimal,0,0"/>
 			<property name="AITarget-4" value=""/> 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="800"/>

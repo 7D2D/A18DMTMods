@@ -504,8 +504,8 @@
 			<property name="PainResistPerHit" value=".70"/>
 			<property name="MaxViewAngle" value="270"/>
 			<property name="MaxTurnSpeed" value="180"/>
-			<property name="AttackTimeoutDay" value="1.0"/> 
-			<property name="AttackTimeoutNight" value="1.0"/>
+			<property name="AttackTimeoutDay" value=".5"/> 
+			<property name="AttackTimeoutNight" value=".5"/>
 			<property name="CanClimbLadders" value="true"/>
 			<property name="CanClimbVertical" value="false"/>
 			<property name="SightRange" value="80"/> 
