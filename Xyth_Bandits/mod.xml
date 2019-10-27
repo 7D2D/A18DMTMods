@@ -1,0 +1,20 @@
+<mod>
+  <info>
+    <author>Xyth</author>
+    <name>Xyth Bandits</name>
+    <description>Bandits by Xyth</description>
+    <mod_version>1.2</mod_version>
+    <game_version>18.0</game_version>
+  </info>
+  <dependencies>
+    <dependency>SphereIICore</dependency>
+  </dependencies>
+  <hashes>
+    <hash filename="Config\entitygroups.xml" hash="60fdd00333a6cdf737e957bea736a178" />
+    <hash filename="Config\items.xml" hash="9d1affc02956c3685d9f6fb7a936faa5" />
+    <hash filename="Resources\Bandits.unity3d" hash="dea7056ee6cf604aa41103c8e746efca" />
+    <hash filename="Scripts\EntityBandits.cs" hash="7bdba8bc8f9624ef6340675670cc3ff6" />
+    <hash filename="Resources\XythBanditAmmo.unity3d" hash="cc484bda02159c4733d7cbcdce72e68a" />
+    <hash filename="Config\entityclasses.xml" hash="376d46695ad701821d6243bdd119a459" />
+  </hashes>
+</mod>
