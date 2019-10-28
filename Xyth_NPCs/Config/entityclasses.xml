@@ -46,9 +46,9 @@
 			<property name="AITask-7" value="Look"/> 
 			<property name="AITask-8" value="WanderSDX, Mods"/> 
 			<property name="AITask-9" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 <!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
  			<property name="SoundHurt" value="Player_Male/player1painlg"/>
@@ -162,9 +162,9 @@
 			<property name="AITask-7" value="Look"/> 
 			<property name="AITask-8" value="WanderSDX, Mods"/> 
 			<property name="AITask-9" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 <!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
@@ -279,9 +279,9 @@
 			<property name="AITask-7" value="Look"/> 
 			<property name="AITask-8" value="WanderSDX, Mods"/> 
 			<property name="AITask-9" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 <!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
@@ -402,9 +402,9 @@
 			<property name="AITask-7" value="Look"/> 
 			<property name="AITask-8" value="WanderSDX, Mods"/> 
 			<property name="AITask-9" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 <!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
   			<property name="SoundRandomTime" value="60.0"/> 
@@ -523,10 +523,10 @@
 			<property name="AITask-8" value="GuardSDX, Mods"/> 
 			<property name="AITask-9" value="WanderSDX, Mods"/> 
 			<property name="AITask-10" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
-			<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
+<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -654,10 +654,10 @@
 			<property name="AITask-8" value="GuardSDX, Mods"/> 
 			<property name="AITask-9" value="WanderSDX, Mods"/> 
 			<property name="AITask-10" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
-			<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
+<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -772,9 +772,9 @@
 			<property name="AITask-7" value="Look"/> 
 			<property name="AITask-8" value="WanderSDX, Mods"/> 
 			<property name="AITask-9" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 <!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
  			<property name="SoundHurt" value="Player_Male/player1painlg"/>
@@ -892,10 +892,10 @@
 			<property name="AITask-8" value="GuardSDX, Mods"/> 
 			<property name="AITask-9" value="WanderSDX, Mods"/> 
 			<property name="AITask-10" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
-			<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
+<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
@@ -1014,10 +1014,10 @@
 			<property name="AITask-8" value="GuardSDX, Mods"/> 
 			<property name="AITask-9" value="WanderSDX, Mods"/> 
 			<property name="AITask-10" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" param1="Entity"/>  
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" param1="Entity"/> 
-			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" param1="Entity,80"/> 
-			<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
+<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>

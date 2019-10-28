@@ -1,9 +1,9 @@
 <mod>
   <info>
-    <author>Xyth/Sphereii</author>
+    <author>Xyth/Sphereii/Darkstardragon</author>
     <name>Xyth NPCs</name>
     <description>Xyth NPC Mod</description>
-    <mod_version>1.5</mod_version>
+    <mod_version>1.51</mod_version>
     <game_version>18.0</game_version>
   </info>
   <dependencies>
