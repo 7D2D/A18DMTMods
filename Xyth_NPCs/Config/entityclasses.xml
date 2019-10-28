@@ -515,7 +515,7 @@
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
+			<property name="AITask-3" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=5;minRange=5;maxRange=50"/>
 			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
@@ -646,7 +646,7 @@
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
+			<property name="AITask-3" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=5;minRange=5;maxRange=50"/>
 			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
@@ -884,7 +884,7 @@
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
+			<property name="AITask-3" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=5;minRange=5;maxRange=50"/>
 			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
@@ -1006,7 +1006,7 @@
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1,1,4"/> 
+			<property name="AITask-3" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=5;minRange=5;maxRange=50"/>
 			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-6" value="PatrolSDX, Mods"/> 
