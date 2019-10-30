@@ -81,6 +81,7 @@
 				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" /> 
 				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property name="SightLightThreshold" value="-2,150"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
 			<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
@@ -155,6 +156,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" /> 
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property name="AttackIndexes" value="0" /> 
 			<property name="SpecialAttackIndexes" value="0" />
@@ -212,7 +214,8 @@
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="200"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" /> 
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property name="AttackIndexes" value="2" /> 
 			<property name="SpecialAttackIndexes" value="0" />
@@ -274,6 +277,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="300"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20" /> 
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 			</effect_group>
 			<property name="AttackIndexes" value="0" /> 
