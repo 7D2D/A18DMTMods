@@ -158,7 +158,7 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" /> 
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding"/>
 			</effect_group>
-			<property name="AttackIndexes" value="0" /> 
+			<property name="AttackIndexes" value="2" /> 
 			<property name="SpecialAttackIndexes" value="0" />
 			<property name="PainIndexes" value="0" /> 
 			<property name="DeathIndexes" value="0" /> 
@@ -247,6 +247,7 @@
 			<property name="LootDropEntityClass" value="EntityLootContainerBandit"/>
 		</entity_class> 		
 		<entity_class name="BanditBoss" extends="AshBandit" >
+			<property name="HasDeathAnim" value="true"/>
 			<property name="UseModderUpdate" value="true" />
 			<property name="Class" value="EntityBandit"/>
 			<property name="Mesh" value="#@modfolder:Resources/Bandits.unity3d?BanditBoss_X" />	
@@ -259,6 +260,25 @@
 			<property name="MoveSpeedPanic" value=".8"/>
 			<property name="AttackTimeoutDay" value="1.0"/> 
 			<property name="AttackTimeoutNight" value="1.0"/>
+			<property name="SoundHurt" value="Player_Male/player1painlg"/>
+			<property name="SoundAttack" value="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_lp" /> 
+			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
+			<property name="SoundDeath" value="Player_Male/player1death"/>
+			<property name="SoundStamina" value="Player_Male/player1stamina"/>
+			<property name="SoundDrownPain" value="Player_Male/player1drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Male/player1drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Male/player1drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player1Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player1LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player1LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandomTime" value="200.0"/>
+			<property name="SoundRandom" value="malehateroam"/>
+			<property name="SoundAlert" value="malehatealert"/>
+			<property name="SoundSense" value="malehatesense"/>
+			<property name="SoundHurt" value="malehatepain"/>
+			<property name="SoundDeath" value="malehatedeath"/>
+			<property name="SoundAttack" value="malehateattack"/>	
 			<property name="AITask-1" value="Swim"/>
 			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=5;minRange=5;maxRange=80"/>
 			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityNPC,0,EntityEnemyAnimal,0,EntityPlayer,0"/>
@@ -278,9 +298,9 @@
 				<passive_effect name="StaminaMax" operation="base_set" value="300"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20" /> 
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/> 
 			</effect_group>
-			<property name="AttackIndexes" value="0" /> 
+			<property name="AttackIndexes" value="2" /> 
 			<property name="SpecialAttackIndexes" value="0" />
 			<property name="PainIndexes" value="0" /> 
 			<property name="DeathIndexes" value="0" /> 
@@ -291,7 +311,7 @@
 			<property name="AttackIdleIndexes" value="0" /> 
 			<property name="TimeStayAfterDeath" value="5"/>
 			<property name="LootDropProb" value="1.0"/> 
-			<property name="LootDropEntityClass" value="EntityLootContainerBandit"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 		</entity_class> 
 	</append>
 </configs>
