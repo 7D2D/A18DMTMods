@@ -42,8 +42,8 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="50"/>
 				<property name="DamageBlock" value="30"/>
-				<property name="Range" value="1.8"/>
-				<property name="Sphere" value=".5"/>
+				<property name="Range" value="2.2"/>
+				<property name="Sphere" value="1.0"/>
 				<property name="Sound_start" value="swoosh" />
 				<property name="Buff" value="criticalBlunt,injuryStunned,injurySprainedLeg" />
 				<property name="Buff_chance" value="0.3,0.1,0.1" /> 
@@ -80,7 +80,7 @@
 				<property name="DamageEntity" value="200"/>
 				<property name="DamageBlock" value="100"/>
 				<property name="Explosion.ParticleIndex" value="7"/>
-				<property name="Velocity" value="25"/>
+				<property name="Velocity" value="30"/>
 				<property name="FlyTime" value="2"/>
 				<property name="LifeTime" value="4"/>
 				<property name="CollisionRadius" value=".5"/>
@@ -99,9 +99,9 @@
 			<property class="Action0">
 				<property name="DamageEntity" value="50"/>
 				<property name="DamageBlock" value="15"/>
-				<property name="Range" value="2.2"/>
-				<property name="Sphere" value=".5"/>
-				<property name="Sound_start" value="chainsaw_fire_rev"/>
+				<property name="Range" value="1.5"/>
+				<property name="Sphere" value="1.0"/>
+				<property name="Sound_start" value="swoosh" />
 				<property name="DamageBonus.head" value="5" />
 			</property>
 			<property class="Action1"> 
@@ -137,7 +137,7 @@
 				<property name="DamageEntity" value="30"/>
 				<property name="DamageBlock" value="10"/>
 				<property name="Range" value="1.3"/>
-				<property name="Sphere" value=".5"/>
+				<property name="Sphere" value="1.0"/>
 				<property name="Sound_start" value="swoosh" />
 				<property name="DamageBonus.head" value="5" />
 			</property>
@@ -174,10 +174,10 @@
 				<property name="DamageEntity" value="75"/>
 				<property name="DamageBlock" value="30"/>
 				<property name="Explosion.ParticleIndex" value="0"/>
-				<property name="Velocity" value="30"/>
+				<property name="Velocity" value="50"/>
 				<property name="FlyTime" value="2"/>
 				<property name="LifeTime" value="4"/>
-				<property name="CollisionRadius" value=".25"/>
+				<property name="CollisionRadius" value=".5"/>
 				<property name="DamageBonus.earth" value="0"/>	
 			</property>
 			<effect_group name="Base Effects">
@@ -199,7 +199,7 @@
 				<property name="Velocity" value="40"/>
 				<property name="FlyTime" value="2"/>
 				<property name="LifeTime" value="4"/>
-				<property name="CollisionRadius" value=".25"/>
+				<property name="CollisionRadius" value=".5"/>
 				<property name="DamageBonus.earth" value="0"/>	
 			</property>
 			<effect_group name="Base Effects">

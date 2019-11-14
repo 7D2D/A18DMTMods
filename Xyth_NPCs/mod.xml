@@ -3,12 +3,12 @@
     <author>Xyth/Sphereii/Darkstardragon</author>
     <name>Xyth NPCs</name>
     <description>Xyth NPC Mod</description>
-    <mod_version>1.6</mod_version>
+    <mod_version>1.61</mod_version>
     <game_version>18.0</game_version>
   </info>
   <dependencies>
-    <dependency>0-SphereIICore</dependency>
-    <dependency>SphereII NPC Dialog Windows</dependency>
+    <dependency> 0-SphereIICore </dependency>
+    <dependency> SphereII NPC Dialog Windows </dependency>
    </dependencies>
   <hashes>
     <hash filename="Config\blocks.xml" hash="9483e91c13b711efe737cca6d84247dd" />
