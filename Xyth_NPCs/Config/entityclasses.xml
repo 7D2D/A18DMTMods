@@ -5,7 +5,7 @@
 			<property name="IsChunkObserver" value="true"/>
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -124,7 +124,7 @@
 		<entity_class name="NPCNurse" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -244,7 +244,7 @@
 		<entity_class name="NPCFarmer" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -363,7 +363,7 @@
 		<entity_class name="NPCHarleyQuinn" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -491,7 +491,7 @@
 		<entity_class name="NPCAmmo" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -525,16 +525,18 @@
 			<property name="SpecialAttackIndexes" value="0" />
 			<property name="RandomIndexes" value="4" /> 
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=2;minRange=5;maxRange=80"/>
-			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
-			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
-			<property name="AITask-6" value="PatrolSDX, Mods"/> 
-			<property name="AITask-7" value="MaslowLevel1SDX, Mods"/> 
-			<property name="AITask-8" value="GuardSDX, Mods"/> 
+			
+			<property name="AITask-1" value="Look"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=4;minRange=3;maxRange=80"/> 
+			<property name="AITask-3" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
+			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
+			<property name="AITask-5" value="PatrolSDX, Mods"/> 
+			<property name="AITask-6" value="MaslowLevel1SDX, Mods"/> 
+			<property name="AITask-7" value="GuardSDX, Mods"/>
+			<property name="AITask-8" value="Territorial"/>
 			<property name="AITask-9" value="WanderSDX, Mods"/> 
-			<property name="AITask-10" value="" />
+			<property name="AITask-10" value="BreakBlock"/>
+			<property name="AITask-11" value="" />
 			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
@@ -619,13 +621,13 @@
 			<property name="Parent" value="Backpack"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="TimeStayAfterDeath" value="300"/>
-			<property name="LootListOnDeath" value="74"/>
+			<property name="LootListOnDeath" value="74"/> <!-- bandit loot -->
 			<property name="Faction" value="none"/>
 		</entity_class>
 		<entity_class name="Hunter" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -659,16 +661,17 @@
 			<property name="SpecialAttackIndexes" value="0" />
 			<property name="RandomIndexes" value="4" /> 
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=2;minRange=5;maxRange=80"/>
-			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
-			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
-			<property name="AITask-6" value="PatrolSDX, Mods"/> 
-			<property name="AITask-7" value="MaslowLevel1SDX, Mods"/> 
-			<property name="AITask-8" value="GuardSDX, Mods"/> 
+			<property name="AITask-1" value="Look"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=4;minRange=3;maxRange=80"/> 
+			<property name="AITask-3" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
+			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
+			<property name="AITask-5" value="PatrolSDX, Mods"/> 
+			<property name="AITask-6" value="MaslowLevel1SDX, Mods"/> 
+			<property name="AITask-7" value="GuardSDX, Mods"/>
+			<property name="AITask-8" value="Territorial"/>
 			<property name="AITask-9" value="WanderSDX, Mods"/> 
-			<property name="AITask-10" value="" />
+			<property name="AITask-10" value="BreakBlock"/>
+			<property name="AITask-11" value="" />
 			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
@@ -749,7 +752,7 @@
 		<entity_class name="Pest" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -869,7 +872,7 @@
 			<entity_class name="Ghost" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="UseModderUpdate" value="true" />
@@ -903,16 +906,17 @@
 			<property name="SpecialAttackIndexes" value="0" />
 			<property name="RandomIndexes" value="4" /> 
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=2;minRange=5;maxRange=80"/>
-			<property name="AITask-4" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
-			<property name="AITask-5" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
-			<property name="AITask-6" value="PatrolSDX, Mods"/> 
-			<property name="AITask-7" value="MaslowLevel1SDX, Mods"/> 
-			<property name="AITask-8" value="GuardSDX, Mods"/> 
+			<property name="AITask-1" value="Look"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=4;minRange=3;maxRange=80"/> 
+			<property name="AITask-3" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
+			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
+			<property name="AITask-5" value="PatrolSDX, Mods"/> 
+			<property name="AITask-6" value="MaslowLevel1SDX, Mods"/> 
+			<property name="AITask-7" value="GuardSDX, Mods"/>
+			<property name="AITask-8" value="Territorial"/>
 			<property name="AITask-9" value="WanderSDX, Mods"/> 
-			<property name="AITask-10" value="" />
+			<property name="AITask-10" value="BreakBlock"/>
+			<property name="AITask-11" value="" />
 			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 

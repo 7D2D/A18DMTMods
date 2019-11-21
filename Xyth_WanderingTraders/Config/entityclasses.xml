@@ -2,7 +2,7 @@
 	<append xpath="/entity_classes">
 		<entity_class name="Food Trader" >
 			<property name="Class" value="EntityWanderingTrader, Mods"/> 
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="NPCID" value="traderfood"/>
@@ -44,18 +44,18 @@
 			<property name="AttackIdleIndexes" value="0" /> 
 			<property name="AIPathCostScale" value=".9, 1"/>
 <!--			<property name="AINoiseSeekDist" value="8"/>		-->	
-			<property name="AITask-1" value="Swim"/>
-			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=5;minRange=5;maxRange=50"/>
+			<property name="AITask-1" value="Look"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=4;minRange=3;maxRange=80"/> 
 			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityAlive"/>
 			<property name="AITask-4" value="ApproachSpot"/>  
-			<property name="AITask-5" value="Look"/> 
+			<property name="AITask-5" value="Swim"/> 
 			<property name="AITask-6" value="Wander"/>
 			<property name="AITask-7" value="BreakBlock"/> 
 			<property name="AITask-8" value="Leap"/> 
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=Entity"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityZombie,20,50,EntityBandit,20,50,EntityEnemyAnimal,20,50"/> <!-- class, hear distance, see dist (checked left to right, 0 dist uses entity default) -->
+			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 			<property name="AITarget-4" value=""/> 			
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -107,7 +107,7 @@
 	
 		<entity_class name="Ammo Trader" >
 			<property name="Class" value="EntityWanderingTrader, Mods"/> 
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="NPCID" value="traderammo"/>
@@ -149,18 +149,18 @@
 			<property name="AttackIdleIndexes" value="0" /> 
 			<property name="AIPathCostScale" value=".9, 1"/>
 <!--			<property name="AINoiseSeekDist" value="8"/>		-->		
-			<property name="AITask-1" value="Swim"/>
-			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=2;duration=4;minRange=5;maxRange=80"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityAlive,0"/>
+			<property name="AITask-1" value="Look"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=4;minRange=3;maxRange=80"/> 
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityAlive"/>
 			<property name="AITask-4" value="ApproachSpot"/>  
-			<property name="AITask-5" value="Look"/> 
+			<property name="AITask-5" value="Swim"/> 
 			<property name="AITask-6" value="Wander"/>
 			<property name="AITask-7" value="BreakBlock"/> 
 			<property name="AITask-8" value="Leap"/> 
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=Entity"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityZombie,20,50,EntityBandit,20,50,EntityEnemyAnimal,20,50"/>
+			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 			<property name="AITarget-4" value=""/> 		
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -211,7 +211,7 @@
 		</entity_class> 
 		<entity_class name="Heavy Trader" >
 			<property name="Class" value="EntityWanderingTrader, Mods"/> 
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="NPCID" value="traderheavy"/>
@@ -253,18 +253,18 @@
 			<property name="AttackIdleIndexes" value="0" /> 
 			<property name="AIPathCostScale" value=".9, 1"/> 
 <!--			<property name="AINoiseSeekDist" value="8"/>		-->				
-			<property name="AITask-1" value="Swim"/>
-			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=5;minRange=5;maxRange=50"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityEnemyAnimal,0,EntityPlayer,0"/>
+			<property name="AITask-1" value="Look"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=4;minRange=3;maxRange=80"/> 
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityAlive"/>
 			<property name="AITask-4" value="ApproachSpot"/>  
-			<property name="AITask-5" value="Look"/> 
+			<property name="AITask-5" value="Swim"/> 
 			<property name="AITask-6" value="Wander"/>
 			<property name="AITask-7" value="BreakBlock"/> 
 			<property name="AITask-8" value="Leap"/> 
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=Entity"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityZombie,20,50,EntityBandit,20,50,EntityEnemyAnimal,20,50"/>
+			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 			<property name="AITarget-4" value=""/> 		
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -315,7 +315,7 @@
 		</entity_class> 		
 		<entity_class name="Drug Trader" >
 			<property name="Class" value="EntityWanderingTrader, Mods"/> 
-			<property name="Faction" value="trader"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="NPCID" value="traderdrug"/>
@@ -357,18 +357,18 @@
 			<property name="AttackIdleIndexes" value="0" /> 
 			<property name="AIPathCostScale" value=".9, 1"/>
 <!--			<property name="AINoiseSeekDist" value="8"/>		-->	
-			<property name="AITask-1" value="Swim"/>
-			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=5;minRange=5;maxRange=50"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityEnemyAnimal,0,EntityPlayer,0"/>
+			<property name="AITask-1" value="Look"/>
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=0;duration=4;minRange=3;maxRange=80"/> 
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityAlive"/>
 			<property name="AITask-4" value="ApproachSpot"/>  
-			<property name="AITask-5" value="Look"/> 
+			<property name="AITask-5" value="Swim"/> 
 			<property name="AITask-6" value="Wander"/>
 			<property name="AITask-7" value="BreakBlock"/> 
 			<property name="AITask-8" value="Leap"/> 
 			<property name="AITask-9" value=""/>	
 			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=Entity"/>
 			<property name="AITarget-2" value="BlockingTargetTask"/> 
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityZombie,20,50,EntityBandit,20,50,EntityEnemyAnimal,20,50"/>
+			<property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 			<property name="AITarget-4" value=""/> 		
 			<property name="SoundHurt" value="Player_Male/player1painlg"/>
 			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
@@ -425,7 +425,7 @@
 			<property name="Parent" value="Backpack"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="TimeStayAfterDeath" value="300"/>
-			<property name="LootListOnDeath" value="101"/> <!-- cntWeaponsBagLarge -->
+			<property name="LootListOnDeath" value="100"/> <!-- cntWeaponsBagSmall -->
 			<property name="Faction" value="none"/>
 		</entity_class>		
 		<entity_class name="EntityLootContainerTraderBox"> 
@@ -436,7 +436,7 @@
 			<property name="Parent" value="Backpack"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="TimeStayAfterDeath" value="300"/>
-			<property name="LootListOnDeath" value="95"/> 
+			<property name="LootListOnDeath" value="71"/> <!-- Strong loot -->
 			<property name="Faction" value="none"/>
 		</entity_class>	
 		<entity_class name="EntityLootContainerTraderSatchel"> 
@@ -447,7 +447,7 @@
 			<property name="Parent" value="Backpack"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="TimeStayAfterDeath" value="300"/>
-			<property name="LootListOnDeath" value="107"/> 
+			<property name="LootListOnDeath" value="107"/> <!-- meds -->
 			<property name="Faction" value="none"/>
 		</entity_class>	
 		<entity_class name="EntityLootContainerTraderBag"> 
@@ -458,7 +458,7 @@
 			<property name="Parent" value="Backpack"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="TimeStayAfterDeath" value="300"/>
-			<property name="LootListOnDeath" value="107"/> 
+			<property name="LootListOnDeath" value="113"/> <!-- food -->
 			<property name="Faction" value="none"/>
 		</entity_class>			
 	</append>
