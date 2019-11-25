@@ -1,0 +1,8 @@
+<configs>
+  <append xpath="/entitygroups/entitygroup[ starts-with(@name, 'EnemyAnimals')]">
+    <entity name="AshBandit" prob="0.02" />
+	<entity name="BanditEve" prob="0.02" />
+	<entity name="BanditArcher" prob="0.02" />
+<!--	<entity name="BanditBoss" prob="0.01" /> -->
+  </append> 
+</configs>
