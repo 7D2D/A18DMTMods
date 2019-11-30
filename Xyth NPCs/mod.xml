@@ -7,8 +7,8 @@
     <game_version>18.0</game_version>
   </info>
   <dependencies>
-    <dependency> 0-SphereIICore </dependency>
-    <dependency> SphereII NPC Dialog Windows </dependency>
+    <dependency>0-SphereIICore</dependency>
+    <dependency>SphereII NPC Dialog Windows</dependency>
    </dependencies>
   <hashes>
     <hash filename="Config\blocks.xml" hash="9483e91c13b711efe737cca6d84247dd" />
