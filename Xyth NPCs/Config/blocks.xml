@@ -1,6 +1,6 @@
 ﻿<configs>
   <append xpath="/blocks" >
-    <!-- This block will serve as a home location for the farm animals.-->
+    <!-- This block will serve as a home location for the NPCs.-->
     <!-- The Maslow will scan for the home block -->
     <block name="cntNPCHomeBlock">
       <property name="Class" value="Loot"/>
@@ -22,7 +22,7 @@
       <property name="EconomicValue" value="156"/>
       <property name="FilterTags" value="floot,ffurniture"/>
 
-      <!-- Buff to keep the animals close by. thenumber in the ( ) is the range -->
+      <!-- Buff to keep the NPCs close by. thenumber in the ( ) is the range -->
       <property name="ActiveRadiusEffects" value="buffHomePoint(30)"/>
     </block>
 
