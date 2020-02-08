@@ -88,7 +88,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Baker.unity3d?BakerRagdoll_X"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NurseNancy.unity3d?NurseNancy_X"/>
 			<property name="AvatarController" value="AvatarZombie01Controller"/>
 			<property name="IsEnemyEntity" value="false"/> 
 			<property name="MoveSpeed" value="0.3"/> 
