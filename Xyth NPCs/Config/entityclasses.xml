@@ -183,7 +183,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
-			<property name="AvatarController" value="MecanimSDX, Mods" />
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
 			<property name="IsEnemyEntity" value="false"/> 
 			<property name="MoveSpeedAggro" value="1.4,1.4"/> 
 			<property name="MoveSpeedPanic" value="1.4"/>
