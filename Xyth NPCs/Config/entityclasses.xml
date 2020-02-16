@@ -360,7 +360,6 @@
 
 		<entity_class name="NPCEveTest" extends="NPCHumanRangedTemplate"> 
 			<property name="Tags" value="entity,npc"/>
-			<property name="AvatarController" value="AvatarZombie01Controller"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>			
 			<property name="Mass" value="150"/>
 <!--			<property name="Class" value="EntityBandit"/>  -->
@@ -378,25 +377,23 @@
 			<property name="MoveSpeed" value="0.5"/> 
 			<property name="MoveSpeedAggro" value=".5, .5"/> 
 			<property name="MoveSpeedPanic" value="1.0"/>
-			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/> 
+
+			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=20"/> 
 			<property name="AITask-2" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-3" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-4" value="PatrolSDX, Mods"/> 
-			<property name="AITask-5" value="MaslowLevel1SDX, Mods"/> 
-			<property name="AITask-6" value="GuardSDX, Mods"/>
-			<property name="AITask-7" value="Territorial"/>
-			<property name="AITask-8" value="WanderSDX, Mods"/> 
-			<property name="AITask-9" value="BreakBlock"/>
-			<property name="AITask-10" value="" />
+			<property name="AITask-5" value="GuardSDX, Mods"/>
+			<property name="AITask-6" value="Territorial"/>
+			<property name="AITask-7" value="WanderSDX, Mods"/> 
+			<property name="AITask-8" value="BreakBlock"/>
+			<property name="AITask-9" value="" />
 			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
-<!--			<property name="AITarget-4" value="LootLocationSDX, Mods" /> -->
 			<property name="AITarget-4" value="" />		
-			<property name="ExperienceGain" value="413"/> <!-- XP grunt -->
-<!--			<property name="LootListAlive" value="62"/> -->
-			<property name="LootDropProb" value="0.05"/> <!-- Whether it drops a loot bag on death or not. -->
-			<!-- <property name="LootListOnDeath" value="45"/> -->
+			<property name="ExperienceGain" value="413"/> 
+			<property name="LootListAlive" value="62"/> 
+			<property name="LootDropProb" value="0.05"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
 		</entity_class>
 
