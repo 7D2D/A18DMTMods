@@ -378,7 +378,7 @@
 			<property name="MoveSpeedAggro" value=".5, .5"/> 
 			<property name="MoveSpeedPanic" value="1.0"/>
 
-			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=20"/> 
+			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/> 
 			<property name="AITask-2" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-3" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
 			<property name="AITask-4" value="PatrolSDX, Mods"/> 
