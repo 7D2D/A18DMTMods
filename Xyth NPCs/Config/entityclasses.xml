@@ -58,7 +58,7 @@
 			<property name="SoundAttack" value="Player_Male/player1stamina"/>
 			<property name="SoundSense" value="Player_Male/player1stamina"/>
 			<property name="SoundGiveUp" value="Player_Male/player1stamina"/>			
- 			<property name="TimeStayAfterDeath" value="5"/>
+ 			<property name="TimeStayAfterDeath" value="15"/>
 			<property name="DeadBodyHitPoints" value="500"/>
 			<property name="JumpMaxDistance" value="3.0, 4.0"/>
 			<effect_group name="Base Effects">
@@ -244,9 +244,9 @@
 			<property name="SoundAttack" value="Player_Male/player1stamina"/>
 			<property name="SoundSense" value="Player_Male/player1stamina"/>
 			<property name="SoundGiveUp" value="Player_Male/player1stamina"/>		
-			<property name="TimeStayAfterDeath" value="5"/>
+			<property name="TimeStayAfterDeath" value="15"/>
 			<property name="DeadBodyHitPoints" value="1000"/>
-			<property name="JumpMaxDistance" value="2.0, 3.0"/>
+			<property name="JumpMaxDistance" value="3.0, 3.0"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="200"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
@@ -368,25 +368,28 @@
 <!--			<property name="HandItem" value="rangedBanditAk47test"/> --> <!-- New Hand item: like AK47 but needs melee rather than dynamicmelee -->
 			<property name="WalkType" value="7"/>
 			<property name="RightHandJointName" value="RightWeapon" />  <!-- weapon should go on this child, but child rotation is wrong right now -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunSMG5test,ammo9mmBulletBalltest"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSMG5test,ammo9mmBulletBalltest"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSMG5test,ammo9mmBulletBalltest"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunSMG5test,ammo9mmBulletBalltest,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSMG5test,ammo9mmBulletBalltest,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSMG5test,ammo9mmBulletBalltest,medicalBandage"/> 
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AttackTimeoutDay" value=".3"/>
 			<property name="AttackTimeoutNight" value=".3"/>
 			<property name="MoveSpeed" value="0.5"/> 
 			<property name="MoveSpeedAggro" value=".5, .5"/> 
-			<property name="MoveSpeedPanic" value="1.0"/>
+			<property name="MoveSpeedPanic" value="1.3"/>
+			
 
-			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/> 
-			<property name="AITask-2" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
-			<property name="AITask-3" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
-			<property name="AITask-4" value="PatrolSDX, Mods"/> 
-			<property name="AITask-5" value="GuardSDX, Mods"/>
-			<property name="AITask-6" value="Territorial"/>
-			<property name="AITask-7" value="WanderSDX, Mods"/> 
-			<property name="AITask-8" value="BreakBlock"/>
-			<property name="AITask-9" value="" />
+			<property name="AITask-1" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" /> 
+			<property name="AITask-2" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/> 
+			<property name="AITask-3" value="Look"/> 
+			<property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>  
+			<property name="AITask-5" value="Wander"/> 
+			<property name="AITask-6" value="" />
+<!--			<property name="AITask-5" value="PatrolSDX, Mods"/> -->
+<!--			<property name="AITask-5" value="GuardSDX, Mods"/> -->
+<!--			<property name="AITask-5" value="Territorial"/> -->
+<!--			<property name="AITask-3" value="RangedAttackTarget2" data="itemType=1;attackPeriod=20"/> -->
+<!--			<property name="AITask-6" value="BreakBlock"/> -->
 			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
@@ -395,6 +398,36 @@
 			<property name="LootListAlive" value="62"/> 
 			<property name="LootDropProb" value="0.05"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+			<property name="JumpMaxDistance" value="3.0, 3.0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="StaminaMax" operation="base_set" value="200"/>
+				<passive_effect name="HealthChangeOT" operation="base_set" value="1.2"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="5" /> 
+				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="65"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="65"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+			</effect_group>
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value=""/>
+			<property name="SoundAttack" value=""/>
+			<property name="SoundSense" value=""/>
+			<property name="SoundGiveUp" value=""/>
 		</entity_class>
 
 	</append>
