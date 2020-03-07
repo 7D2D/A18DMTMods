@@ -367,9 +367,9 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="7"/>
 			<property name="RightHandJointName" value="RightWeapon" />  <!-- Non standard, legacy, will be converted to Gunjoint soon -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> <!-- Here we spawn in weapons and other things we want on the invisible NPC toolbelt.  First is primary weaponItem, next is Meleehand (only if first is a rangedItem) , next is ammo(only if first is a rangedItem) , after that the things that will drop on death until we get ItemUse working -->
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> <!-- Here we spawn in weapons and other things we want on the invisible NPC toolbelt.  First is primary weaponItem, next is Meleehand (only if first is a rangedItem) , next is ammo(only if first is a rangedItem) , after that the things that will drop on death until we get ItemUse working -->
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
 			<property name="MoveSpeed" value="0.5"/> 
@@ -582,9 +582,9 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="6"/> <!-- New walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
@@ -649,9 +649,9 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="6"/> <!-- New walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
