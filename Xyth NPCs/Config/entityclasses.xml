@@ -627,6 +627,14 @@
 				<passive_effect name="HyperthermalResist" operation="base_add" value="65"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+<!--				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierHip" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="10"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/> -->
 			</effect_group>
 		</entity_class>			
 		<entity_class name="NPCFarmerAK47" extends="NPCFarmerSMG"> 
@@ -677,8 +685,9 @@
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
-		</entity_class>			
+		</entity_class>	
 		
+	
 		
 <!--  Testing, not going well yet  -->
 
@@ -738,13 +747,14 @@
             <property name="AITarget-4" value="" />
 		</entity_class>	
 		
-		<entity_class name="NPCFarmerTestBow" extends="NPCFarmerTestXBow"> 
+<!--		<entity_class name="NPCFarmerTestBow" extends="NPCFarmerTestXBow"> 
 			<property name="Tags" value="entity,npc,ranged"/>
 			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoArrowStonetest"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoArrowStonetest"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoArrowStonetest"/> 
-		</entity_class>
+		</entity_class> -->
 	
 	</append>
 </configs>
