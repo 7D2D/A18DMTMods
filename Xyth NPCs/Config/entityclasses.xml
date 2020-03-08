@@ -645,9 +645,9 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="6"/> <!-- New walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		<entity_class name="NPCNurseSMG" extends="NPCFarmerSMG"> 
 			<property name="Tags" value="entity,npc,ranged"/>
@@ -657,9 +657,9 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="6"/> <!-- New walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
@@ -682,17 +682,17 @@
 		
 		<entity_class name="NPCNurseAK47" extends="NPCNurseSMG"> 
 			<property name="Tags" value="entity,npc,ranged"/>
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 	
 		
-<!--  Testing, not going well yet  -->
+<!--  Testing, waiting for feedback  -->
 
 		
-		<entity_class name="NPCFarmerTestPistol" extends="NPCFarmerSMG"> 
+		<entity_class name="NPCFarmerPistol" extends="NPCFarmerSMG"> 
 			<property name="Tags" value="entity,npc,ranged"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/FarmerFrankie.unity3d?FarmerRagdoll2_X"/>			
 			<property name="Mass" value="150"/>
@@ -700,9 +700,9 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="2"/> <!-- New walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
 			<property name="MoveSpeed" value="0.5"/> 
@@ -714,21 +714,21 @@
 			<property name="Tags" value="entity,npc,ranged"/>
 			<property name="WalkType" value="2"/> <!-- New walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>		
 		
-		<entity_class name="NPCFarmerTestXBow" extends="NPCFarmerSMG"> 
+		<entity_class name="NPCFarmerXBow" extends="NPCFarmerSMG"> 
 			<property name="Tags" value="entity,npc,ranged"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/FarmerFrankie.unity3d?FarmerRagdoll2_X"/>			
 			<property name="Mass" value="150"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="6"/> 
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoCrossbowBoltIrontest"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoCrossbowBoltIrontest"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoCrossbowBoltIrontest"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
 			<property name="MoveSpeed" value="0.5"/> 
@@ -747,14 +747,14 @@
             <property name="AITarget-4" value="" />
 		</entity_class>	
 		
-<!--		<entity_class name="NPCFarmerTestBow" extends="NPCFarmerTestXBow"> 
+		<entity_class name="NPCFarmerBow" extends="NPCFarmerXBow"> 
 			<property name="Tags" value="entity,npc,ranged"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoArrowStonetest"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoArrowStonetest"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoArrowStonetest"/> 
-		</entity_class> -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 
 	
 	</append>
 </configs>
