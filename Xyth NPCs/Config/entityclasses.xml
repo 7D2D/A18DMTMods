@@ -79,6 +79,7 @@
 				<passive_effect name="HyperthermalResist" operation="base_add" value="65"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 			</effect_group>
 			<property name="ParticleOnDeath" value="blood_death"/>
 			<property name="SurfaceCategory" value="organic"/> 
@@ -260,6 +261,7 @@
 				<passive_effect name="HyperthermalResist" operation="base_add" value="65"/>	
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 			</effect_group>
 			<property name="WalkType" value="7"/>
 			<property name="ExperienceGain" value="1550"/> 
@@ -357,16 +359,14 @@
 
 <!--  Testing Stuff - Weapons spawned on characters by xml properties -->
 
-<!--  Eves:  Baseline using individual models and controllers-->
-
 		<entity_class name="NPCEveSMG" extends="NPCHumanRangedTemplate"> 
 			<property name="Tags" value="entity,npc"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdollRanged_X"/>			
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>			
 			<property name="Mass" value="150"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name='Class' value='EntityAliveSDX, Mods' />
-			<property name="WalkType" value="7"/>
-			<property name="RightHandJointName" value="RightWeapon" />  <!-- Non standard, legacy, will be converted to Gunjoint soon -->
+			<property name="WalkType" value="6"/>
+			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> <!-- Here we spawn in weapons and other things we want on the invisible NPC toolbelt.  First is primary weaponItem, next is Meleehand (only if first is a rangedItem) , next is ammo(only if first is a rangedItem) , after that the things that will drop on death until we get ItemUse working -->
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
@@ -409,6 +409,7 @@
 				<passive_effect name="HyperthermalResist" operation="base_add" value="65"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 			</effect_group>
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
@@ -432,7 +433,7 @@
 		
 		<entity_class name="NPCEveClub" extends="NPCNurse"> 
 			<property name="Tags" value="entity,npc"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdollMelee_X"/>			
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>			
 			<property name="Mass" value="150"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name='Class' value='EntityAliveSDX, Mods' />
@@ -452,7 +453,7 @@
 		
 		<entity_class name="NPCEveKnife" extends="NPCEveClub"> 
 			<property name="Tags" value="entity,npc"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdollMelee_X"/>			
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>			
 			<property name="Mass" value="150"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name='Class' value='EntityAliveSDX, Mods' />
@@ -495,7 +496,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
-			<property name="MoveSpeed" value="0.5"/> 
+			<property name="MoveSpeed" value="0.3"/> 
 			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
 			<property name="MoveSpeedPanic" value="1.3"/>
 			<property name="PathingBlocks" value="PathingCube" />
@@ -531,6 +532,7 @@
 				<passive_effect name="HyperthermalResist" operation="base_add" value="65"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 			</effect_group>
 		</entity_class>
 		
@@ -573,6 +575,8 @@
 			<property name="SoundGiveUp" value=""/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna" />
 		</entity_class>	
+		
+<!--  Ranged, using RangedAttackTarget2  -->		
  		
 		<entity_class name="NPCFarmerSMG" extends="NPCFarmer"> 
 			<property name="Tags" value="entity,npc,ranged"/>
@@ -588,12 +592,12 @@
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
-			<property name="MoveSpeed" value="0.5"/> 
+			<property name="MoveSpeed" value="0.3"/> 
 			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
 			<property name="MoveSpeedPanic" value="1.4"/>
 			<property name="PathingBlocks" value="PathingCube" /> 
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/>
+			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/> <!--  itemType0 is Action0  , attackPeriod is used in a calculation, vanilla bandits were set at 20  -->
 			<property name="AITask-2" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-3" value="Look"/>	
             <property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>
@@ -604,8 +608,6 @@
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
             <property name="AITarget-4" value="" />
-			
-			<!-- Testing Senses... Seems effective -->
 			<property name="MaxViewAngle" value="210"/>
 			<property name="SightRange" value="90"/>
 			<property name="AINoiseSeekDist" value="20"/>
@@ -627,6 +629,7 @@
 				<passive_effect name="HyperthermalResist" operation="base_add" value="65"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 <!--				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
 				<passive_effect name="SpreadMultiplierHip" operation="base_set" value="10"/>
@@ -645,10 +648,23 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="WalkType" value="6"/> <!-- New walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/> 
-		</entity_class>	
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+		<entity_class name="NPCFarmerHunter" extends="NPCFarmerSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/FarmerFrankie.unity3d?FarmerRagdoll2_X"/>            
+            <property name="Mass" value="150"/>
+            <property name="Faction" value="whiteriver"/>
+            <property name='Class' value='EntityAliveSDX, Mods' />
+            <property name="WalkType" value="6"/> <!-- New walktype for rifles  -->
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/> 
+        </entity_class>    
+
 		<entity_class name="NPCNurseSMG" extends="NPCFarmerSMG"> 
 			<property name="Tags" value="entity,npc,ranged"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NurseNancy.unity3d?NurseNancy_X"/>				
@@ -682,9 +698,9 @@
 		
 		<entity_class name="NPCNurseAK47" extends="NPCNurseSMG"> 
 			<property name="Tags" value="entity,npc,ranged"/>
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC9mmBulletBall"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
 		</entity_class>	
 		
 	
@@ -705,7 +721,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
-			<property name="MoveSpeed" value="0.5"/> 
+			<property name="MoveSpeed" value="0.3"/> 
 			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
 			<property name="MoveSpeedPanic" value="1.4"/>
 		</entity_class>	
@@ -731,7 +747,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
 			<property name="AttackTimeoutDay" value="1.2"/>
 			<property name="AttackTimeoutNight" value="1.2"/>
-			<property name="MoveSpeed" value="0.5"/> 
+			<property name="MoveSpeed" value="0.3"/> 
 			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
 			<property name="MoveSpeedPanic" value="1.4"/>
 			<property name="AITask-1" value="RangedAttackTarget2" data="itemType=0;attackPeriod=10"/>
@@ -755,6 +771,16 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 
-	
+		
+		<entity_class name="NPCEveBow" extends="NPCNurseSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>		
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 		
+
 	</append>
 </configs>
