@@ -288,9 +288,9 @@
             <property name="Tags" value="entity,npc,ranged"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
-            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/> 
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
         </entity_class>    		
 		
 		<entity_class name="NPCFarmerPistol" extends="NPCFarmerSMG"> 
@@ -371,13 +371,14 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
 		</entity_class>
+		
 		<entity_class name="NPCBakerHunter" extends="NPCBakerSMG"> 
             <property name="Tags" value="entity,npc,ranged"/>
-             <property name="WalkType" value="6"/> 
+			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
-            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/> 
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
         </entity_class>    		
 		
 		<entity_class name="NPCBakerPistol" extends="NPCBakerSMG"> 
@@ -494,9 +495,9 @@
             <property name="Tags" value="entity,npc,ranged"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
-            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/> 
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
         </entity_class>    		
 		
 		<entity_class name="NPCNursePistol" extends="NPCNurseSMG"> 
@@ -572,9 +573,9 @@
             <property name="Tags" value="entity,npc,ranged"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
-            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/> 
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
         </entity_class>    		
 		
 		<entity_class name="NPCEvePistol" extends="NPCEveSMG"> 
@@ -650,9 +651,9 @@
             <property name="Tags" value="entity,npc,ranged"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
-            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/>
-            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletHP"/> 
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
         </entity_class>    		
 		
 		<entity_class name="NPCHeavyGuyPistol" extends="NPCHeavyGuySMG"> 
