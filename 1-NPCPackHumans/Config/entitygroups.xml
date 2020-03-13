@@ -139,6 +139,16 @@
 			<entity name="NPCHeavyGuyBow" prob="0.01" />
 			<entity name="NPCJoel" prob="0.02" />
 			<entity name="NPCAmmo" prob="0.02" />
+			<entity name="NPCCowboyEmptyHand" prob="0.01" />
+			<entity name="NPCCowboyClub" prob="0.01" />
+			<entity name="NPCCowboyKnife" prob="0.01" />
+			<entity name="NPCCowboySMG" prob="0.01" />
+			<entity name="NPCCowboyAK47" prob="0.01" />
+			<entity name="NPCCowboyHunter" prob="0.01" />
+			<entity name="NPCCowboyPistol" prob="0.01" />
+			<entity name="NPCCowboyXBow" prob="0.01" />
+			<entity name="NPCCowboyBow" prob="0.01" />		
+			<entity name="NPCJoel" prob="0.02" />
 			<entity name="NPCPest" prob="0.02" />
 			<entity name="NPCMoto" prob="0.02" />
 		</entitygroup>	
@@ -195,7 +205,16 @@
 		<entity name="NPCHeavyGuyXBow" prob="0.005" />
 		<entity name="NPCHeavyGuyBow" prob="0.005" />
 		<entity name="NPCJoel" prob="0.01" />
-		<entity name="NPCAmmo" prob="0.01" />
+		<entity name="NPCAmmo" prob="0.005" />
+		<entity name="NPCCowboyEmptyHand" prob="0.005" />
+		<entity name="NPCCowboyClub" prob="0.005" />
+		<entity name="NPCCowboyKnife" prob="0.005" />
+		<entity name="NPCCowboySMG" prob="0.005" />
+		<entity name="NPCCowboyAK47" prob="0.005" />
+		<entity name="NPCCowboyHunter" prob="0.005" />
+		<entity name="NPCCowboyPistol" prob="0.005" />
+		<entity name="NPCCowboyXBow" prob="0.005" />
+		<entity name="NPCCowboyBow" prob="0.005" />		
 		<entity name="NPCPest" prob="0.01" />
 		<entity name="NPCMoto" prob="0.01" />
 		<entity name="NPCRanger" prob="0.005" />
