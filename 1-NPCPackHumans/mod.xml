@@ -1,0 +1,15 @@
+<mod>
+  <info>
+    <author>XythCommunityProject</author>
+    <name>1-NPCPackHumans</name>
+    <description>Extends 0-CreaturePacksHuman with DMT added functionality</description>
+    <mod_version>2.30</mod_version>
+    <game_version>18.0</game_version>
+  </info>
+  <dependencies>
+    <dependency>0-SphereIICore</dependency>
+    <dependency>SphereII NPC Dialog Windows</dependency>
+	<dependency>0-CreaturePackHumans</dependency>
+   </dependencies>
+
+</mod>
