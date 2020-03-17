@@ -284,5 +284,35 @@
 		<entity name="NPCNationalGuardHunter" prob="0.005" />
 		<entity name="NPCNationalGuardPistol" prob="0.005" />
 		<entity name="NPCNationalGuardXBow" prob="0.005" />
+		<entity name="NPCRaiderPest" prob="0.005" />
+		<entity name="NPCRaiderPestEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderPestClub" prob="0.005" />
+		<entity name="NPCRaiderPestKnife" prob="0.005" />
+		<entity name="NPCRaiderPestSMG" prob="0.005" />
+		<entity name="NPCRaiderPestAK47" prob="0.005" />
+		<entity name="NPCRaiderPestHunter" prob="0.005" />
+		<entity name="NPCRaiderPestPistol" prob="0.005" /> 
+		<entity name="NPCRaiderPestXBow" prob="0.005" />
+		<entity name="NPCRaiderPestBow" prob="0.005" />
+		<entity name="NPCRaiderMoto" prob="0.005" />
+		<entity name="NPCRaiderMotoEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderMotoClub" prob="0.005" />
+		<entity name="NPCRaiderMotoKnife" prob="0.005" />
+		<entity name="NPCRaiderMotoSMG" prob="0.005" />
+		<entity name="NPCRaiderMotoAK47" prob="0.005" />
+		<entity name="NPCRaiderMotoHunter" prob="0.005" />
+		<entity name="NPCRaiderMotoPistol" prob="0.005" />
+		<entity name="NPCRaiderMotoXBow" prob="0.005" />
+		<entity name="NPCRaiderMotoBow" prob="0.005" />
+		<entity name="NPCRaiderSlugger" prob="0.005" />
+		<entity name="NPCRaiderSluggerEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderSluggerClub" prob="0.005" />
+		<entity name="NPCRaiderSluggerKnife" prob="0.005" />
+		<entity name="NPCRaiderSluggerSMG" prob="0.005" />
+		<entity name="NPCRaiderSluggerAK47" prob="0.005" />
+		<entity name="NPCRaiderSluggerHunter" prob="0.005" />
+		<entity name="NPCRaiderSluggerPistol" prob="0.005" />
+		<entity name="NPCRaiderSluggerXBow" prob="0.005" />
+		<entity name="NPCRaiderSluggerBow" prob="0.005" />
 	</append> 
 </configs>

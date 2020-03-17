@@ -316,6 +316,14 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 
+		
+		<entity_class name="NPCFarmerShotty" extends="NPCFarmerSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
+		</entity_class> 
 
 		<!--  Baker  -->
 
@@ -680,24 +688,6 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 		
 
-		<!--  Joel  -->
-		
-		<entity_class name="NPCJoel" extends="NPCHumanMeleeTemplate">
-			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Joel.unity3d?JoelRagdoll_X"/>
-			<property name="Mass" value="150"/> 
-			<property name="HandItem" value="handChefKnife"/>
-			<property name="MoveSpeed" value="0.3"/> 
-			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
-			<property name="MoveSpeedPanic" value="1.1"/>
-			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="Names" value="Joel,Jim,James,Jed,John,Jake" />		
-			<property name="HireCurrency" value="casinoCoin" />
-			<property name="HireCost" value="1000" />
-		</entity_class> 	
-
 		<!--  Cowboy Guy  -->
 			
 		<entity_class name="NPCAmmo" extends="NPCHumanRangedTemplate" >
@@ -738,9 +728,9 @@
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCCowboyAK47" extends="NPCCowboySMG"> 
@@ -786,6 +776,26 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 
+		
+		<!--  Joel  -->
+		
+		<entity_class name="NPCJoel" extends="NPCHumanMeleeTemplate">
+			<property name="NPCID" value="spheretest"/>
+			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Joel.unity3d?JoelRagdoll_X"/>
+			<property name="Mass" value="150"/> 
+			<property name="HandItem" value="handChefKnife"/>
+			<property name="MoveSpeed" value="0.3"/> 
+			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
+			<property name="MoveSpeedPanic" value="1.1"/>
+			<property name="AIPathCostScale" value=".9, 1"/>
+			<property name="Names" value="Joel,Jim,James,Jed,John,Jake" />		
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 		
+		
+		
 	
 <!-- DarkStarDragons Entities  -->
 
@@ -1501,51 +1511,256 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 		
 
-		<entity_class name="NPCPest" extends="NPCHumanMeleeTemplate">
+		<entity_class name="NPCRaiderPestEmptyHand" extends="NPCHumanMeleeTemplate" >
+			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz.unity3d?RaiderPestDark"/>
-			<property name="Mass" value="150"/> 
-			<property name="HandItem" value="handChefKnife"/>
-			<property name="MoveSpeed" value="0.3"/> 
-			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
-			<property name="MoveSpeedPanic" value="1.1"/>
+			<property name="Mass" value="150"/>
+			<property name="WalkType" value="7"/>			
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderPest2Dark"/>		<!-- Empty Hand version  -->	
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>	
+			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
+			<property name="MoveSpeedPanic" value="1.4"/>
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="Names" value="Pest,Pain,Pug,Pill,Pal" />		
+			<property name="MaxTurnSpeed" value="180"/>
+			<property name="DeadBodyHitPoints" value="500"/>
 			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 		</entity_class> 
-		<entity_class name="NPCMoto" extends="NPCHumanMeleeTemplate">
-			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
+
+		<entity_class name="NPCRaiderPestClub" extends="NPCRaiderPestEmptyHand"> 
 			<property name="Tags" value="entity,npc"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz.unity3d?RaiderMotoDark"/>
-			<property name="Mass" value="150"/> 
-			<property name="HandItem" value="handChefKnife"/>
-			<property name="MoveSpeed" value="0.3"/> 
-			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
-			<property name="MoveSpeedPanic" value="1.1"/>
-			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="Names" value="Moto,Moe,Mike,Mat,Mitch" />		
-			<property name="HireCurrency" value="casinoCoin" />
-			<property name="HireCost" value="1000" />
-		</entity_class> 
-		<entity_class name="NPCSlugger" extends="NPCHumanMeleeTemplate">
-			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCRaiderPestKnife" extends="NPCRaiderPestEmptyHand"> 
 			<property name="Tags" value="entity,npc"/>
-			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz.unity3d?RaiderSluggerDark"/>
-			<property name="Mass" value="150"/> 
-			<property name="HandItem" value="handChefKnife"/>
-			<property name="MoveSpeed" value="0.3"/> 
-			<property name="MoveSpeedAggro" value="1.1, 1.1"/> 
-			<property name="MoveSpeedPanic" value="1.1"/>
-			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="Names" value="Slugger,Sal,Sloan,Sam,Steve" />		
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderPestSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderPest2Dark"/>
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+		</entity_class>	
+
+		<entity_class name="NPCRaiderPestAK47" extends="NPCRaiderPestSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+
+		<entity_class name="NPCRaiderPestHunter" extends="NPCRaiderPestSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCRaiderPestPistol" extends="NPCRaiderPestSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCRaiderPestXBow" extends="NPCRaiderPestSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderPestBow" extends="NPCRaiderPestSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 
+
+		<!--  Moto -->
+
+		<entity_class name="NPCRaiderMotoEmptyHand" extends="NPCHumanMeleeTemplate">
+			<property name="Tags" value="entity,npc"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderMoto2Dark"/> 		<!-- Empty Hand version  -->	
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>	
+			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />		
 			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 		</entity_class> 
+
+		<entity_class name="NPCRaiderMotoClub" extends="NPCRaiderMotoEmptyHand"> 
+			<property name="Tags" value="entity,npc"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCRaiderMotoKnife" extends="NPCRaiderMotoEmptyHand"> 
+			<property name="Tags" value="entity,npc"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderMotoSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderMoto2Dark"/> 
+			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderMotoAK47" extends="NPCRaiderMotoSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+		
+		<entity_class name="NPCRaiderMotoHunter" extends="NPCRaiderMotoSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCRaiderMotoPistol" extends="NPCRaiderMotoSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCRaiderMotoXBow" extends="NPCRaiderMotoSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderMotoBow" extends="NPCRaiderMotoSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 		
+		
+		<!--  Slugger -->
+
+		<entity_class name="NPCRaiderSluggerEmptyHand" extends="NPCHumanMeleeTemplate">
+			<property name="Tags" value="entity,npc"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderSlugger2Dark"/> 		<!-- Empty Hand version  -->	
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>		
+			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />		
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 
+
+		<entity_class name="NPCRaiderSluggerClub" extends="NPCRaiderSluggerEmptyHand"> 
+			<property name="Tags" value="entity,npc"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCRaiderSluggerKnife" extends="NPCRaiderSluggerEmptyHand"> 
+			<property name="Tags" value="entity,npc"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderSluggerSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderSlugger2Dark"/> 
+			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderSluggerAK47" extends="NPCRaiderSluggerSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+		
+		<entity_class name="NPCRaiderSluggerHunter" extends="NPCRaiderSluggerSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCRaiderSluggerPistol" extends="NPCRaiderSluggerSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCRaiderSluggerXBow" extends="NPCRaiderSluggerSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCRaiderSluggerBow" extends="NPCRaiderSluggerSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 				
 
 	</append>
 </configs>
