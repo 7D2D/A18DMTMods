@@ -18,19 +18,9 @@
 			<property name="Tags" value="entity,npc"/>
 			<property name="LootListAlive" value="62"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Baker.unity3d?BakerRagdoll_X"/>
-			<property name="AvatarController" value="AvatarZombie01Controller"/>
-			<property name="RootMotion" value="true" />
-			<property name="HasRagdoll" value="true" />
-			<property name="PainResistPerHit" value=".5"/>
-			<property name="MoveSpeed" value="0.3"/> 
+			<property name="MoveSpeed" value="0.25"/> 
 			<property name="MoveSpeedAggro" value="1.4,1.4"/> 
 			<property name="MoveSpeedPanic" value="1.4"/>
-			<property name="PainResistPerHit" value=".50"/>
-			<property name="MaxTurnSpeed" value="180"/>
-			<property name="AttackTimeoutDay" value="1.2"/> 
-			<property name="AttackTimeoutNight" value="1.2"/>
-			<property name="CanClimbLadders" value="true"/>
-			<property name="CanClimbVertical" value="false"/>
 			<property name="WalkType" value="7"/>
 			<property name="RightHandJointName" value="RightHand" />  	<!-- This is for fixed weapons under the hand, needs changing for spawned melee  -->			
 			<property name="HandItem" value="handChefKnife"/>			
@@ -48,28 +38,7 @@
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
 			<property name="AITarget-4" value=""/>
 			<property name="MaxViewAngle" value="210"/>
-			<property name="SightRange" value="90"/>
-			<property name="AINoiseSeekDist" value="20"/>
-			<property name="NoiseAlertThreshold" value="5"/>
-			<property name="SoundHurt" value="Player_Male/player1painlg"/>
-			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
-			<property name="SoundDeath" value="Player_Male/player1death"/>
-			<property name="SoundStamina" value="Player_Male/player1stamina"/>
-			<property name="SoundDrownPain" value="Player_Male/player1drownpain"/>
-			<property name="SoundWaterSurface" value="Player_Male/player1drownsurface"/>
-			<property name="SoundDrownDeath" value="Player_Male/player1drowndeath"/>
-			<property name="SoundJump" value="Player_Male/player1Jump"/>
-			<property name="SoundLandSoft" value="Player_Male/player1LandSoft"/>
-			<property name="SoundLandHard" value="Player_Male/player1LandHard"/>
-			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
-			<property name="SoundRandom" value="Player_Male/player1stamina" />
-			<property name="SoundRandomTime" value="60.0"/>
-			<property name="SoundAlert" value="Player_Male/player1stamina"/>
-			<property name="SoundAttack" value="Player_Male/player1stamina"/>
-			<property name="SoundSense" value="Player_Male/player1stamina"/>
-			<property name="SoundGiveUp" value="Player_Male/player1stamina"/>			
- 			<property name="TimeStayAfterDeath" value="15"/>
-			<property name="DeadBodyHitPoints" value="500"/>
+			<property name="SightRange" value="70"/>
 			<property name="JumpMaxDistance" value="3.0, 4.0"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
@@ -84,8 +53,6 @@
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 			</effect_group>
-			<property name="ParticleOnDeath" value="blood_death"/>
-			<property name="SurfaceCategory" value="organic"/> 
 			<property name="ExperienceGain" value="1000"/> 
 			<property name="LootDropProb" value="1.0"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerNPC"/>	
@@ -124,11 +91,6 @@
 			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
 			<property name="MoveSpeedPanic" value="1.1"/>
 			<property name="PainResistPerHit" value=".50"/>
-			<property name="MaxTurnSpeed" value="180"/>
-			<property name="AttackTimeoutDay" value="1.2"/> 
-			<property name="AttackTimeoutNight" value="1.2"/>
-			<property name="CanClimbLadders" value="true"/>
-			<property name="CanClimbVertical" value="false"/>
 			<property name="PainResistPerHit" value=".5"/>
 			<property name="WalkType" value="7"/> <!-- This is for fixed type ranged weapons, needs changing for spawned ranged  -->
 			<property name="RightHandJointName" value="RightHand" />  <!-- This is for fixed weapons under the hand, needs changing for spawned ranged  -->	
@@ -146,28 +108,7 @@
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
             <property name="AITarget-4" value="" />
 			<property name="MaxViewAngle" value="210"/>
-			<property name="SightRange" value="90"/>
-			<property name="AINoiseSeekDist" value="20"/>
-			<property name="NoiseAlertThreshold" value="5"/>
-			<property name="SoundHurt" value="Player_Male/player1painlg"/>
-			<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
-			<property name="SoundDeath" value="Player_Male/player1death"/>
-			<property name="SoundStamina" value="Player_Male/player1stamina"/>
-			<property name="SoundDrownPain" value="Player_Male/player1drownpain"/>
-			<property name="SoundWaterSurface" value="Player_Male/player1drownsurface"/>
-			<property name="SoundDrownDeath" value="Player_Male/player1drowndeath"/>
-			<property name="SoundJump" value="Player_Male/player1Jump"/>
-			<property name="SoundLandSoft" value="Player_Male/player1LandSoft"/>
-			<property name="SoundLandHard" value="Player_Male/player1LandHard"/>
-			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
-			<property name="SoundRandom" value="Player_Male/player1stamina" />
-			<property name="SoundRandomTime" value="60.0"/>
-			<property name="SoundAlert" value="Player_Male/player1stamina"/>
-			<property name="SoundAttack" value="Player_Male/player1stamina"/>
-			<property name="SoundSense" value="Player_Male/player1stamina"/>
-			<property name="SoundGiveUp" value="Player_Male/player1stamina"/>		
-			<property name="TimeStayAfterDeath" value="15"/>
-			<property name="DeadBodyHitPoints" value="1000"/>
+			<property name="SightRange" value="70"/>
 			<property name="JumpMaxDistance" value="3.0, 4.0"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
@@ -183,7 +124,7 @@
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 			</effect_group>
 			<property name="WalkType" value="7"/>
-			<property name="ExperienceGain" value="1550"/> 
+			<property name="ExperienceGain" value="1000"/> 
 			<property name="LootDropProb" value="1.0"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerNPC"/>	
 			<property name="MapIcon" value="ui_game_symbol_bullet_point"/>
@@ -268,9 +209,9 @@
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCFarmerAK47" extends="NPCFarmerSMG"> 
@@ -364,9 +305,9 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCBakerAK47" extends="NPCBakerSMG"> 
@@ -562,9 +503,9 @@
 			<property name="Names" value="Eve,Eva,Evelyn,Edie" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCEveAK47" extends="NPCEveSMG"> 
@@ -640,9 +581,9 @@
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCHeavyGuyAK47" extends="NPCHeavyGuySMG"> 
@@ -838,9 +779,9 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCHunterAK47" extends="NPCHunterSMG"> 
@@ -926,9 +867,9 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCDeltaAK47" extends="NPCDeltaSMG"> 
@@ -1014,9 +955,9 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCNationalGuardAK47" extends="NPCNationalGuardSMG"> 
@@ -1102,9 +1043,9 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRangerAK47" extends="NPCRangerSMG"> 
@@ -1462,9 +1403,9 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
 			<property name="SoundGiveUp" value="Player_Female/player2stamina"/>
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCGhostAK47" extends="NPCGhostSMG"> 
@@ -1551,9 +1492,9 @@
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 
 		<entity_class name="NPCRaiderPestAK47" extends="NPCRaiderPestSMG"> 
@@ -1632,9 +1573,9 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderMotoAK47" extends="NPCRaiderMotoSMG"> 
@@ -1713,9 +1654,9 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
 			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderSluggerAK47" extends="NPCRaiderSluggerSMG"> 
