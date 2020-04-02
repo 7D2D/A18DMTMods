@@ -86,6 +86,42 @@
 			<entity name="NPCNationalGuardHunter" prob="0.01" />
 			<entity name="NPCNationalGuardPistol" prob="0.01" />
 			<entity name="NPCNationalGuardXBow" prob="0.01" />
+			<entity name="NPCGupSoldier1EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier1Club" prob="0.01" />
+			<entity name="NPCGupSoldier1Knife" prob="0.01" />
+			<entity name="NPCGupSoldier1SMG" prob="0.01" />
+			<entity name="NPCGupSoldier1AK47" prob="0.01" />
+			<entity name="NPCGupSoldier1Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier1Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier1XBow" prob="0.01" />
+			<entity name="NPCGupSoldier1Bow" prob="0.01" />
+			<entity name="NPCGupSoldier6EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier6Club" prob="0.01" />
+			<entity name="NPCGupSoldier6Knife" prob="0.01" />
+			<entity name="NPCGupSoldier6SMG" prob="0.01" />
+			<entity name="NPCGupSoldier6AK47" prob="0.01" />
+			<entity name="NPCGupSoldier6Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier6Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier6XBow" prob="0.01" />
+			<entity name="NPCGupSoldier6Bow" prob="0.01" />
+			<entity name="NPCGupSoldier7EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier7Club" prob="0.01" />
+			<entity name="NPCGupSoldier7Knife" prob="0.01" />
+			<entity name="NPCGupSoldier7SMG" prob="0.01" />
+			<entity name="NPCGupSoldier7AK47" prob="0.01" />
+			<entity name="NPCGupSoldier7Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier7Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier7XBow" prob="0.01" />
+			<entity name="NPCGupSoldier7Bow" prob="0.01" />
+			<entity name="NPCGupSoldier8EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier8Club" prob="0.01" />
+			<entity name="NPCGupSoldier8Knife" prob="0.01" />
+			<entity name="NPCGupSoldier8SMG" prob="0.01" />
+			<entity name="NPCGupSoldier8AK47" prob="0.01" />
+			<entity name="NPCGupSoldier8Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier8Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier8XBow" prob="0.01" />
+			<entity name="NPCGupSoldier8Bow" prob="0.01" />
 		</entitygroup>	
 		
 		<entitygroup name="NPCCiviliansAll">
@@ -150,7 +186,45 @@
 			<entity name="NPCCowboyBow" prob="0.01" />		
 			<entity name="NPCJoel" prob="0.02" />
 		</entitygroup>	
-
+		
+		<entitygroup name="NPCGupSoldiersAll">
+			<entity name="NPCGupSoldier1EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier1Club" prob="0.01" />
+			<entity name="NPCGupSoldier1Knife" prob="0.01" />
+			<entity name="NPCGupSoldier1SMG" prob="0.01" />
+			<entity name="NPCGupSoldier1AK47" prob="0.01" />
+			<entity name="NPCGupSoldier1Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier1Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier1XBow" prob="0.01" />
+			<entity name="NPCGupSoldier1Bow" prob="0.01" />
+			<entity name="NPCGupSoldier6EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier6Club" prob="0.01" />
+			<entity name="NPCGupSoldier6Knife" prob="0.01" />
+			<entity name="NPCGupSoldier6SMG" prob="0.01" />
+			<entity name="NPCGupSoldier6AK47" prob="0.01" />
+			<entity name="NPCGupSoldier6Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier6Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier6XBow" prob="0.01" />
+			<entity name="NPCGupSoldier6Bow" prob="0.01" />
+			<entity name="NPCGupSoldier7EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier7Club" prob="0.01" />
+			<entity name="NPCGupSoldier7Knife" prob="0.01" />
+			<entity name="NPCGupSoldier7SMG" prob="0.01" />
+			<entity name="NPCGupSoldier7AK47" prob="0.01" />
+			<entity name="NPCGupSoldier7Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier7Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier7XBow" prob="0.01" />
+			<entity name="NPCGupSoldier7Bow" prob="0.01" />
+			<entity name="NPCGupSoldier8EmptyHand" prob="0.01" />
+			<entity name="NPCGupSoldier8Club" prob="0.01" />
+			<entity name="NPCGupSoldier8Knife" prob="0.01" />
+			<entity name="NPCGupSoldier8SMG" prob="0.01" />
+			<entity name="NPCGupSoldier8AK47" prob="0.01" />
+			<entity name="NPCGupSoldier8Hunter" prob="0.01" />
+			<entity name="NPCGupSoldier8Pistol" prob="0.01" /> 
+			<entity name="NPCGupSoldier8XBow" prob="0.01" />
+			<entity name="NPCGupSoldier8Bow" prob="0.01" />
+		</entitygroup>		
 	</append> 
 
 	<append xpath="/entitygroups/entitygroup[ starts-with(@name, 'FriendlyAnimals')]">
