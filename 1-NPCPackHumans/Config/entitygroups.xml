@@ -381,5 +381,59 @@
 		<entity name="NPCRaiderSluggerPistol" prob="0.005" />
 		<entity name="NPCRaiderSluggerXBow" prob="0.005" />
 		<entity name="NPCRaiderSluggerBow" prob="0.005" />
+		<entity name="NPCRaiderHumongousEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderHumongousClub" prob="0.005" />
+		<entity name="NPCRaiderHumongousKnife" prob="0.005" />
+		<entity name="NPCRaiderHumongousSMG" prob="0.005" />
+		<entity name="NPCRaiderHumongousAK47" prob="0.005" />
+		<entity name="NPCRaiderHumongousHunter" prob="0.005" />
+		<entity name="NPCRaiderHumongousPistol" prob="0.005" /> 
+		<entity name="NPCRaiderHumongousXBow" prob="0.005" />
+		<entity name="NPCRaiderHumongousBow" prob="0.005" />
+		<entity name="NPCRaiderRatEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderRatClub" prob="0.005" />
+		<entity name="NPCRaiderRatKnife" prob="0.005" />
+		<entity name="NPCRaiderRatSMG" prob="0.005" />
+		<entity name="NPCRaiderRatAK47" prob="0.005" />
+		<entity name="NPCRaiderRatHunter" prob="0.005" />
+		<entity name="NPCRaiderRatPistol" prob="0.005" /> 
+		<entity name="NPCRaiderRatXBow" prob="0.005" />
+		<entity name="NPCRaiderRatBow" prob="0.005" />
+		<entity name="NPCRaiderBettieEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderBettieClub" prob="0.005" />
+		<entity name="NPCRaiderBettieKnife" prob="0.005" />
+		<entity name="NPCRaiderBettieSMG" prob="0.005" />
+		<entity name="NPCRaiderBettieAK47" prob="0.005" />
+		<entity name="NPCRaiderBettieHunter" prob="0.005" />
+		<entity name="NPCRaiderBettiePistol" prob="0.005" /> 
+		<entity name="NPCRaiderBettieXBow" prob="0.005" />
+		<entity name="NPCRaiderBettieBow" prob="0.005" />
+		<entity name="NPCRaiderGinaEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderGinaClub" prob="0.005" />
+		<entity name="NPCRaiderGinaKnife" prob="0.005" />
+		<entity name="NPCRaiderGinaSMG" prob="0.005" />
+		<entity name="NPCRaiderGinaAK47" prob="0.005" />
+		<entity name="NPCRaiderGinaHunter" prob="0.005" />
+		<entity name="NPCRaiderGinaPistol" prob="0.005" /> 
+		<entity name="NPCRaiderGinaXBow" prob="0.005" />
+		<entity name="NPCRaiderGinaBow" prob="0.005" />
+		<entity name="NPCRaiderHedyEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderHedyClub" prob="0.005" />
+		<entity name="NPCRaiderHedyKnife" prob="0.005" />
+		<entity name="NPCRaiderHedySMG" prob="0.005" />
+		<entity name="NPCRaiderHedyAK47" prob="0.005" />
+		<entity name="NPCRaiderHedyHunter" prob="0.005" />
+		<entity name="NPCRaiderHedyPistol" prob="0.005" /> 
+		<entity name="NPCRaiderHedyXBow" prob="0.005" />
+		<entity name="NPCRaiderHedyBow" prob="0.005" />
+		<entity name="NPCRaiderJayneEmptyHand" prob="0.005" />
+		<entity name="NPCRaiderJayneClub" prob="0.005" />
+		<entity name="NPCRaiderJayneKnife" prob="0.005" />
+		<entity name="NPCRaiderJayneSMG" prob="0.005" />
+		<entity name="NPCRaiderJayneAK47" prob="0.005" />
+		<entity name="NPCRaiderJayneHunter" prob="0.005" />
+		<entity name="NPCRaiderJaynePistol" prob="0.005" /> 
+		<entity name="NPCRaiderJayneXBow" prob="0.005" />
+		<entity name="NPCRaiderJayneBow" prob="0.005" />		
 	</append> 
 </configs>
