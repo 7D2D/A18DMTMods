@@ -24,7 +24,7 @@
 			<property name="WalkType" value="7"/>
 			<property name="RightHandJointName" value="RightHand" />  	<!-- This is for fixed weapons under the hand, needs changing for spawned melee  -->			
 			<property name="HandItem" value="handChefKnife"/>			
-			<property name="PathingBlocks" value="PathingCube" /> 
+<!--			<property name="PathingBlocks" value="PathingCube" />   commented out in the template due to performance hit.  Enable in a specific entity as desired -->
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AITask-1" value="ApproachAndAttackSDX, Mods" data="class=Entity,0"/>
 			<property name="AITask-2" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>
@@ -95,7 +95,7 @@
 			<property name="WalkType" value="7"/> <!-- This is for fixed type ranged weapons, needs changing for spawned ranged  -->
 			<property name="RightHandJointName" value="RightHand" />  <!-- This is for fixed weapons under the hand, needs changing for spawned ranged  -->	
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="PathingBlocks" value="PathingCube" /> 
+<!--			<property name="PathingBlocks" value="PathingCube" />   commented out in the template due to performance hit.  Enable in a specific entity as desired -->
 			<property name="AITask-1" value="RangedAttackTargetSDX, Mods" data="itemType=0;attackPeriod=10"/> <!--  New class  -->
 			<property name="AITask-2" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
 			<property name="AITask-3" value="Look"/>	
