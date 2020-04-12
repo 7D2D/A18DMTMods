@@ -56,7 +56,7 @@
 			<property name="ExperienceGain" value="1000"/> 
 			<property name="LootDropProb" value="1.0"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerNPC"/>	
-			<property name="MapIcon" value="ui_game_symbol_bullet_point"/>
+<!--			<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
 			<property name="Names" value="TemplateBob" />		
 			<property name="Buffs" value="buffNPCStatusCheck;buffStatusCheck01;buffNPCSanitationStatusCheck" />
 			  <!-- Food items and bins that this entity will eat, if using the right AI Task -->
@@ -127,7 +127,7 @@
 			<property name="ExperienceGain" value="1000"/> 
 			<property name="LootDropProb" value="1.0"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerNPC"/>	
-			<property name="MapIcon" value="ui_game_symbol_bullet_point"/>
+<!--			<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
 			<property name="Names" value="Bill,Mickey D" />		
 			<property name="Buffs" value="buffNPCStatusCheck;buffStatusCheck;buffNPCSanitationStatusCheck" />
 			<property name="FoodBins" value="cntSecureStorageChest,cntStorageChest" />
