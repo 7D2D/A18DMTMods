@@ -199,28 +199,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCFarmerEmptyHand" extends="NPCFarmer"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/FarmerFrankie.unity3d?FarmerRagdoll2_X"/>		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCFarmerClub" extends="NPCFarmerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCFarmerKnife" extends="NPCFarmerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCFarmerSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/FarmerFrankie.unity3d?FarmerRagdoll2_X"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -231,7 +231,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCFarmerAK47" extends="NPCFarmerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -240,7 +240,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCFarmerHunter" extends="NPCFarmerSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -249,7 +249,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCFarmerPistol" extends="NPCFarmerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -258,7 +258,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCFarmerXBow" extends="NPCFarmerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -266,7 +266,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCFarmerBow" extends="NPCFarmerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -275,7 +275,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCFarmerShotty" extends="NPCFarmerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -285,8 +285,7 @@
 		<!--  Baker  -->
 
 		<entity_class name="NPCBaker" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Baker.unity3d?BakerRagdoll_X"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -296,28 +295,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCBakerEmptyHand" extends="NPCBaker"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Baker.unity3d?BakerRagdoll2_X"/> 		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCBakerClub" extends="NPCBakerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCBakerKnife" extends="NPCBakerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCBakerSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Baker.unity3d?BakerRagdoll2_X"/> 
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -328,7 +327,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCBakerAK47" extends="NPCBakerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -337,7 +336,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCBakerHunter" extends="NPCBakerSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -346,7 +345,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCBakerPistol" extends="NPCBakerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -355,7 +354,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCBakerXBow" extends="NPCBakerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -363,7 +362,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCBakerBow" extends="NPCBakerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -374,8 +373,7 @@
 		<!--  Nurse  -->
 		
 		<entity_class name="NPCNurse" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NurseNancy.unity3d?NurseNancy_X"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
@@ -400,28 +398,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCNurseEmptyHand" extends="NPCNurse"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NurseNancy.unity3d?NurseNancy_X"/> 		
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCNurseClub" extends="NPCNurseEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCNurseKnife" extends="NPCNurseEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCNurseSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NurseNancy.unity3d?NurseNancy_X"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -449,7 +447,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCNurseAK47" extends="NPCNurseSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -457,7 +455,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
 		</entity_class>
 		<entity_class name="NPCNurseHunter" extends="NPCNurseSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -466,7 +464,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCNursePistol" extends="NPCNurseSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -475,7 +473,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCNurseXBow" extends="NPCNurseSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -483,7 +481,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCNurseBow" extends="NPCNurseSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -494,8 +492,7 @@
 		<!--  Eve  -->	
 		
 		<entity_class name="NPCEveEmptyHand" extends="NPCNurse"> 
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>
 			<property name="Names" value="Eve,Eva,Evelyn,Edie" />	
 			<property name="RightHandJointName" value="RightWeapon" />  
@@ -503,21 +500,21 @@
 		</entity_class>	
 
 		<entity_class name="NPCEveClub" extends="NPCEveEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCEveKnife" extends="NPCEveEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCEveSMG" extends="NPCNurseSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>
 			<property name="Names" value="Eve,Eva,Evelyn,Edie" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -528,7 +525,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCEveAK47" extends="NPCEveSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -536,7 +533,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
 		</entity_class>
 		<entity_class name="NPCEveHunter" extends="NPCEveSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -545,7 +542,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCEvePistol" extends="NPCEveSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -554,7 +551,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCEveXBow" extends="NPCEveSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -562,7 +559,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCEveBow" extends="NPCEveSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -573,8 +570,7 @@
 		<!--  Heavy Guy  -->		
 
 		<entity_class name="NPCHeavyGuyEmptyHand" extends="NPCHumanMeleeTemplate"> 
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/HeavyGuy.unity3d?HeavyGuy2_X"/>
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="RightHandJointName" value="RightWeapon" />
@@ -582,21 +578,21 @@
 		</entity_class>	
 
 		<entity_class name="NPCHeavyGuyClub" extends="NPCHeavyGuyEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCHeavyGuyKnife" extends="NPCHeavyGuyEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCHeavyGuySMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/HeavyGuy.unity3d?HeavyGuy2_X"/>
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -607,7 +603,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCHeavyGuyAK47" extends="NPCHeavyGuySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -615,7 +611,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
 		</entity_class>
 		<entity_class name="NPCHeavyGuyHunter" extends="NPCHeavyGuySMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -624,7 +620,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCHeavyGuyPistol" extends="NPCHeavyGuySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -633,7 +629,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCHeavyGuyXBow" extends="NPCHeavyGuySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -641,7 +637,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCHeavyGuyBow" extends="NPCHeavyGuySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -655,15 +651,14 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
 			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Rifleman.unity3d?RifleManNoPack_X"/>	
 			<property name="Names" value="Mickey D" />		
 			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 		</entity_class> 
 		<entity_class name="NPCCowboyEmptyHand" extends="NPCHumanMeleeTemplate"> 
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Rifleman.unity3d?CowboyBasic_X"/>	
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="RightHandJointName" value="RightWeapon" />
@@ -671,21 +666,21 @@
 		</entity_class>	
 
 		<entity_class name="NPCCowboyClub" extends="NPCCowboyEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCCowboyKnife" extends="NPCCowboyEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCCowboySMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Rifleman.unity3d?CowboyBasic_X"/>	
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -696,7 +691,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCCowboyAK47" extends="NPCCowboySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -705,7 +700,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCCowboyHunter" extends="NPCCowboySMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -714,7 +709,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCCowboyPistol" extends="NPCCowboySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -723,7 +718,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCCowboyXBow" extends="NPCCowboySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -731,7 +726,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCCowboyBow" extends="NPCCowboySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -743,8 +738,7 @@
 		
 		<entity_class name="NPCJoel" extends="NPCHumanMeleeTemplate">
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Joel.unity3d?JoelRagdoll_X"/>
 			<property name="Mass" value="150"/> 
 			<property name="HandItem" value="handChefKnife"/>
@@ -764,8 +758,7 @@
 		<!--  Hunter -->
 
 		<entity_class name="NPCHunter" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?HunterDark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -775,28 +768,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCHunterEmptyHand" extends="NPCHunter"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?HunterDark"/> 		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCHunterClub" extends="NPCHunterEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCHunterKnife" extends="NPCHunterEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCHunterSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?HunterDark"/> 
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -807,7 +800,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCHunterAK47" extends="NPCHunterSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -816,7 +809,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCHunterRifle" extends="NPCHunterSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -825,7 +818,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCHunterPistol" extends="NPCHunterSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -834,7 +827,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCHunterXBow" extends="NPCHunterSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -842,7 +835,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCHunterBow" extends="NPCHunterSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -853,8 +846,7 @@
 	<!--  Delta -->
 
 		<entity_class name="NPCDelta" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Delta2Dark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -864,28 +856,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCDeltaEmptyHand" extends="NPCDelta"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Delta2Dark"/> 		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCDeltaClub" extends="NPCDeltaEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCDeltaKnife" extends="NPCDeltaEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCDeltaSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Delta2Dark"/> 
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -896,7 +888,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCDeltaAK47" extends="NPCDeltaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -905,7 +897,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCDeltaHunter" extends="NPCDeltaSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -914,7 +906,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCDeltaPistol" extends="NPCDeltaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -923,7 +915,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCDeltaXBow" extends="NPCDeltaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -931,7 +923,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCDeltaBow" extends="NPCDeltaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -942,8 +934,7 @@
 <!--  NationalGuard -->
 
 		<entity_class name="NPCNationalGuard" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuard2Dark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -953,28 +944,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCNationalGuardEmptyHand" extends="NPCNationalGuard"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuard2Dark"/> 		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCNationalGuardClub" extends="NPCNationalGuardEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCNationalGuardKnife" extends="NPCNationalGuardEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCNationalGuardSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuard2Dark"/> 
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -985,7 +976,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCNationalGuardAK47" extends="NPCNationalGuardSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -994,7 +985,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCNationalGuardHunter" extends="NPCNationalGuardSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1003,7 +994,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCNationalGuardPistol" extends="NPCNationalGuardSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1012,7 +1003,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCNationalGuardXBow" extends="NPCNationalGuardSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1020,7 +1011,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCNationalGuardBow" extends="NPCNationalGuardSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1031,8 +1022,7 @@
 <!--  Ranger -->
 
 		<entity_class name="NPCRanger" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Ranger2Dark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -1042,28 +1032,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCRangerEmptyHand" extends="NPCRanger"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Ranger2Dark"/> 		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCRangerClub" extends="NPCRangerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRangerKnife" extends="NPCRangerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRangerSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Ranger2Dark"/> 
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1074,7 +1064,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRangerAK47" extends="NPCRangerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1083,7 +1073,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRangerHunter" extends="NPCRangerSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1092,7 +1082,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRangerPistol" extends="NPCRangerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1101,7 +1091,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRangerXBow" extends="NPCRangerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1109,7 +1099,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRangerBow" extends="NPCRangerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1120,8 +1110,7 @@
 		<!--  ArmyDoctor  -->
 		
 		<entity_class name="NPCArmyDoctor" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?ArmyDoctor2Dark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
@@ -1146,28 +1135,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCArmyDoctorEmptyHand" extends="NPCArmyDoctor"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?ArmyDoctor2Dark"/> 		
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCArmyDoctorClub" extends="NPCArmyDoctorEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCArmyDoctorKnife" extends="NPCArmyDoctorEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCArmyDoctorSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?ArmyDoctor2Dark"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1195,7 +1184,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCArmyDoctorAK47" extends="NPCArmyDoctorSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1204,7 +1193,7 @@
 		</entity_class>
 
 		<entity_class name="NPCArmyDoctorHunter" extends="NPCArmyDoctorSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1213,7 +1202,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCArmyDoctorPistol" extends="NPCArmyDoctorSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1222,7 +1211,7 @@
 		</entity_class>	
 	
 		<entity_class name="NPCArmyDoctorXBow" extends="NPCArmyDoctorSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1230,7 +1219,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCArmyDoctorBow" extends="NPCArmyDoctorSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1241,8 +1230,7 @@
 	<!--  NationalGuardMedic  -->
 		
 		<entity_class name="NPCNationalGuardMedic" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuardMedic2Dark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
@@ -1267,28 +1255,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCNationalGuardMedicEmptyHand" extends="NPCNationalGuardMedic"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuardMedic2Dark"/> 		
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCNationalGuardMedicClub" extends="NPCNationalGuardMedicEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCNationalGuardMedicKnife" extends="NPCNationalGuardMedicEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCNationalGuardMedicSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuardMedic2Dark"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1316,7 +1304,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCNationalGuardMedicAK47" extends="NPCNationalGuardMedicSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1325,7 +1313,7 @@
 		</entity_class>
 
 		<entity_class name="NPCNationalGuardMedicHunter" extends="NPCNationalGuardMedicSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1334,7 +1322,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCNationalGuardMedicPistol" extends="NPCNationalGuardMedicSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1343,7 +1331,7 @@
 		</entity_class>	
 	
 		<entity_class name="NPCNationalGuardMedicXBow" extends="NPCNationalGuardMedicSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1351,7 +1339,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCNationalGuardMedicBow" extends="NPCNationalGuardMedicSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1362,10 +1350,9 @@
 	<!--  Ghost  -->
 		
 		<entity_class name="NPCGhost" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?GhostDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
-			<property name="Faction" value="whiteriver"/>
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
@@ -1388,28 +1375,28 @@
 		</entity_class> 
 		
 		<entity_class name="NPCGhostEmptyHand" extends="NPCGhost"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?GhostDark"/> 		
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>			
 		</entity_class>	
 
 		<entity_class name="NPCGhostClub" extends="NPCGhostEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCGhostKnife" extends="NPCGhostEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCGhostSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?GhostDark"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1437,7 +1424,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGhostAK47" extends="NPCGhostSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1446,7 +1433,7 @@
 		</entity_class>
 
 		<entity_class name="NPCGhostHunter" extends="NPCGhostSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
              <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1455,7 +1442,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCGhostPistol" extends="NPCGhostSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1464,7 +1451,7 @@
 		</entity_class>	
 	
 		<entity_class name="NPCGhostXBow" extends="NPCGhostSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1472,7 +1459,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGhostBow" extends="NPCGhostSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1483,8 +1470,7 @@
 		<entity_class name="NPCRaiderPestEmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
@@ -1501,21 +1487,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderPestClub" extends="NPCRaiderPestEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderPestKnife" extends="NPCRaiderPestEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderPestSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderPest2Dark"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1526,7 +1512,7 @@
 		</entity_class>	
 
 		<entity_class name="NPCRaiderPestAK47" extends="NPCRaiderPestSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1535,7 +1521,7 @@
 		</entity_class>
 
 		<entity_class name="NPCRaiderPestHunter" extends="NPCRaiderPestSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1544,7 +1530,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderPestPistol" extends="NPCRaiderPestSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1553,7 +1539,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderPestXBow" extends="NPCRaiderPestSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1561,7 +1547,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderPestBow" extends="NPCRaiderPestSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1572,7 +1558,7 @@
 		<!--  Moto -->
 
 		<entity_class name="NPCRaiderMotoEmptyHand" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderMoto2Dark"/> 		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>	
@@ -1582,21 +1568,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderMotoClub" extends="NPCRaiderMotoEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderMotoKnife" extends="NPCRaiderMotoEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderMotoSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderMoto2Dark"/> 
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1607,7 +1593,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderMotoAK47" extends="NPCRaiderMotoSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1616,7 +1602,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderMotoHunter" extends="NPCRaiderMotoSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1625,7 +1611,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderMotoPistol" extends="NPCRaiderMotoSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1634,7 +1620,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderMotoXBow" extends="NPCRaiderMotoSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1642,7 +1628,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderMotoBow" extends="NPCRaiderMotoSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1653,7 +1639,7 @@
 		<!--  Slugger -->
 
 		<entity_class name="NPCRaiderSluggerEmptyHand" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderSlugger2Dark"/> 		<!-- Empty Hand version  -->	
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="HandItem" value="handEmpty"/>		
@@ -1663,21 +1649,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderSluggerClub" extends="NPCRaiderSluggerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderSluggerKnife" extends="NPCRaiderSluggerEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderSluggerSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz3.unity3d?RaiderSlugger2Dark"/> 
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1688,7 +1674,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderSluggerAK47" extends="NPCRaiderSluggerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1697,7 +1683,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderSluggerHunter" extends="NPCRaiderSluggerSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1706,7 +1692,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderSluggerPistol" extends="NPCRaiderSluggerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1715,7 +1701,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderSluggerXBow" extends="NPCRaiderSluggerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1723,7 +1709,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderSluggerBow" extends="NPCRaiderSluggerSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1737,8 +1723,7 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
@@ -1752,21 +1737,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderRatClub" extends="NPCRaiderRatEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderRatKnife" extends="NPCRaiderRatEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderRatSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?RaiderRatDark"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1777,7 +1762,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderRatAK47" extends="NPCRaiderRatSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1786,7 +1771,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderRatHunter" extends="NPCRaiderRatSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1795,7 +1780,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderRatPistol" extends="NPCRaiderRatSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1804,7 +1789,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderRatXBow" extends="NPCRaiderRatSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1812,7 +1797,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderRatBow" extends="NPCRaiderRatSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1821,7 +1806,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCRaiderRatShotty" extends="NPCRaiderRatSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -1834,8 +1819,7 @@
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="RightHandJointName" value="RightWeapon" />  			
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
@@ -1849,21 +1833,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderHumongousClub" extends="NPCRaiderHumongousEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderHumongousKnife" extends="NPCRaiderHumongousEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderHumongousSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?RaiderHumongousDark"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1874,7 +1858,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderHumongousAK47" extends="NPCRaiderHumongousSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -1883,7 +1867,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderHumongousHunter" extends="NPCRaiderHumongousSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -1892,7 +1876,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderHumongousPistol" extends="NPCRaiderHumongousSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -1901,7 +1885,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderHumongousXBow" extends="NPCRaiderHumongousSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -1909,7 +1893,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderHumongousBow" extends="NPCRaiderHumongousSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -1918,7 +1902,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCRaiderHumongousShotty" extends="NPCRaiderHumongousSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -1929,7 +1913,7 @@
                      <!--  RaiderBettie  -->
 		
 		<entity_class name="NPCRaiderBettieEmptyHand" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?BettieDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
@@ -1956,21 +1940,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderBettieClub" extends="NPCRaiderBettieEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderBettieKnife" extends="NPCRaiderBettieEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderBettieSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?BettieDark"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -1998,7 +1982,7 @@
 		</entity_class>	
 
 		<entity_class name="NPCRaiderBettieAK47" extends="NPCRaiderBettieSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2007,7 +1991,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderBettieHunter" extends="NPCRaiderBettieSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2016,7 +2000,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderBettiePistol" extends="NPCRaiderBettieSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2025,7 +2009,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderBettieXBow" extends="NPCRaiderBettieSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2033,7 +2017,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderBettieBow" extends="NPCRaiderBettieSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2042,7 +2026,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCRaiderBettieShotty" extends="NPCRaiderBettieSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -2052,7 +2036,7 @@
                   <!--  RaiderGina  -->
 		
 		<entity_class name="NPCRaiderGinaEmptyHand" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?GinaDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
@@ -2079,21 +2063,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderGinaClub" extends="NPCRaiderGinaEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderGinaKnife" extends="NPCRaiderGinaEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderGinaSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?GinaDark"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -2121,7 +2105,7 @@
 		</entity_class>	
 
 		<entity_class name="NPCRaiderGinaAK47" extends="NPCRaiderGinaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2130,7 +2114,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderGinaHunter" extends="NPCRaiderGinaSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2139,7 +2123,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderGinaPistol" extends="NPCRaiderGinaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2148,7 +2132,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderGinaXBow" extends="NPCRaiderGinaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2156,7 +2140,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderGinaBow" extends="NPCRaiderGinaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2165,7 +2149,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCRaiderGinaShotty" extends="NPCRaiderGinaSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -2175,7 +2159,7 @@
                     <!--  RaiderHedy  -->
 		
 		<entity_class name="NPCRaiderHedyEmptyHand" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?HedyDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
@@ -2202,21 +2186,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderHedyClub" extends="NPCRaiderHedyEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderHedyKnife" extends="NPCRaiderHedyEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderHedySMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?HedyDark"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -2244,7 +2228,7 @@
 		</entity_class>	
 
 		<entity_class name="NPCRaiderHedyAK47" extends="NPCRaiderHedySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2253,7 +2237,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderHedyHunter" extends="NPCRaiderHedySMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2262,7 +2246,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderHedyPistol" extends="NPCRaiderHedySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2271,7 +2255,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderHedyXBow" extends="NPCRaiderHedySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2279,7 +2263,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderHedyBow" extends="NPCRaiderHedySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2288,7 +2272,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCRaiderHedyShotty" extends="NPCRaiderHedySMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -2298,7 +2282,7 @@
                      <!--  RaiderJayne  -->
 		
 		<entity_class name="NPCRaiderJayneEmptyHand" extends="NPCHumanMeleeTemplate">
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?JayneDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
@@ -2325,21 +2309,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCRaiderJayneClub" extends="NPCRaiderJayneEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 		
 		<entity_class name="NPCRaiderJayneKnife" extends="NPCRaiderJayneEmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderJayneSMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?JayneDark"/> 
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -2367,7 +2351,7 @@
 		</entity_class>	
 
 		<entity_class name="NPCRaiderJayneAK47" extends="NPCRaiderJayneSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2376,7 +2360,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCRaiderJayneHunter" extends="NPCRaiderJayneSMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2385,7 +2369,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCRaiderJaynePistol" extends="NPCRaiderJayneSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2394,7 +2378,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCRaiderJayneXBow" extends="NPCRaiderJayneSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2402,7 +2386,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCRaiderJayneBow" extends="NPCRaiderJayneSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2411,7 +2395,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCRaiderJayneShotty" extends="NPCRaiderJayneSMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -2425,8 +2409,7 @@
 		<entity_class name="NPCGupSoldier1EmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
@@ -2443,21 +2426,21 @@
 		</entity_class> 
 		
 		<entity_class name="NPCGupSoldier1Club" extends="NPCGupSoldier1EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 
 		<entity_class name="NPCGupSoldier1Knife" extends="NPCGupSoldier1EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier1SMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/GupSoldierz.unity3d?GupSoldier1"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -2468,7 +2451,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier1AK47" extends="NPCGupSoldier1SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2477,7 +2460,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCGupSoldier1Hunter" extends="NPCGupSoldier1SMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2486,7 +2469,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCGupSoldier1Pistol" extends="NPCGupSoldier1SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2495,7 +2478,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCGupSoldier1XBow" extends="NPCGupSoldier1SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2503,7 +2486,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier1Bow" extends="NPCGupSoldier1SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2512,7 +2495,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCGupSoldier1Shotty" extends="NPCGupSoldier1SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -2524,8 +2507,7 @@
 		<entity_class name="NPCGupSoldier6EmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
@@ -2542,21 +2524,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCGupSoldier6Club" extends="NPCGupSoldier6EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 
 		<entity_class name="NPCGupSoldier6Knife" extends="NPCGupSoldier6EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier6SMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/GupSoldierz.unity3d?GupSoldier6"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -2567,7 +2549,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier6AK47" extends="NPCGupSoldier6SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2576,7 +2558,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCGupSoldier6Hunter" extends="NPCGupSoldier6SMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2585,7 +2567,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCGupSoldier6Pistol" extends="NPCGupSoldier6SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2594,7 +2576,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCGupSoldier6XBow" extends="NPCGupSoldier6SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2602,7 +2584,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier6Bow" extends="NPCGupSoldier6SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2611,7 +2593,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCGupSoldier6Shotty" extends="NPCGupSoldier6SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -2623,8 +2605,7 @@
 		<entity_class name="NPCGupSoldier7EmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
@@ -2641,21 +2622,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCGupSoldier7Club" extends="NPCGupSoldier7EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 
 		<entity_class name="NPCGupSoldier7Knife" extends="NPCGupSoldier7EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier7SMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/GupSoldierz.unity3d?GupSoldier7"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -2666,7 +2647,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier7AK47" extends="NPCGupSoldier7SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2675,7 +2656,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCGupSoldier7Hunter" extends="NPCGupSoldier7SMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2684,7 +2665,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCGupSoldier7Pistol" extends="NPCGupSoldier7SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2693,7 +2674,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCGupSoldier7XBow" extends="NPCGupSoldier7SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2701,7 +2682,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier7Bow" extends="NPCGupSoldier7SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2710,7 +2691,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCGupSoldier7Shotty" extends="NPCGupSoldier7SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
@@ -2722,8 +2703,7 @@
 		<entity_class name="NPCGupSoldier8EmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
@@ -2740,21 +2720,21 @@
 		</entity_class> 
 
 		<entity_class name="NPCGupSoldier8Club" extends="NPCGupSoldier8EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
 		</entity_class>
 
 		<entity_class name="NPCGupSoldier8Knife" extends="NPCGupSoldier8EmptyHand"> 
-			<property name="Tags" value="entity,npc"/>
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier8SMG" extends="NPCHumanRangedTemplate"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/GupSoldierz.unity3d?GupSoldier8"/>
 			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
 			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
@@ -2765,7 +2745,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier8AK47" extends="NPCGupSoldier8SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="RightHandJointName" value="Gunjoint" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
@@ -2774,7 +2754,7 @@
 		</entity_class>
 		
 		<entity_class name="NPCGupSoldier8Hunter" extends="NPCGupSoldier8SMG"> 
-            <property name="Tags" value="entity,npc,ranged"/>
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
             <property name="WalkType" value="6"/> 
             <property name="RightHandJointName" value="Gunjoint" />  
             <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
@@ -2783,7 +2763,7 @@
         </entity_class>    		
 		
 		<entity_class name="NPCGupSoldier8Pistol" extends="NPCGupSoldier8SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
 			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
@@ -2792,7 +2772,7 @@
 		</entity_class>			
 		
 		<entity_class name="NPCGupSoldier8XBow" extends="NPCGupSoldier8SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/> 
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
@@ -2800,7 +2780,7 @@
 		</entity_class>	
 		
 		<entity_class name="NPCGupSoldier8Bow" extends="NPCGupSoldier8SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="3"/> 
 			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
@@ -2809,7 +2789,7 @@
 		</entity_class> 
 		
 		<entity_class name="NPCGupSoldier8Shotty" extends="NPCGupSoldier8SMG"> 
-			<property name="Tags" value="entity,npc,ranged"/>
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whiteriver"/>
 			<property name="WalkType" value="6"/>			
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
