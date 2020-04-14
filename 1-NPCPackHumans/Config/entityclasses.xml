@@ -1735,6 +1735,7 @@
 
 		<entity_class name="NPCRaiderRatEmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
+			<property name="RightHandJointName" value="RightWeapon" />  
 			<property name="NPCID" value="spheretest"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
@@ -1831,6 +1832,7 @@
 
 		<entity_class name="NPCRaiderHumongousEmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
+			<property name="RightHandJointName" value="RightWeapon" />  			
 			<property name="NPCID" value="spheretest"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name="Tags" value="entity,npc"/>
@@ -1931,6 +1933,7 @@
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?BettieDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
+			<property name="RightHandJointName" value="RightWeapon" />  			
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
@@ -2053,6 +2056,7 @@
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?GinaDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
+			<property name="RightHandJointName" value="RightWeapon" /> 
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
@@ -2175,6 +2179,7 @@
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?HedyDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
+			<property name="RightHandJointName" value="RightWeapon" /> 
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
@@ -2297,6 +2302,7 @@
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Raiderz10.unity3d?JayneDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="HandItem" value="handEmpty"/>
+			<property name="RightHandJointName" value="RightWeapon" /> 
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
