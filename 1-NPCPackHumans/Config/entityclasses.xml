@@ -21,6 +21,7 @@
 			<property name="MoveSpeed" value="0.25"/> 
 			<property name="MoveSpeedAggro" value="1.4,1.4"/> 
 			<property name="MoveSpeedPanic" value="1.4"/>
+			<property name="PainResistPerHit" value=".5"/>			
 			<property name="WalkType" value="7"/>
 			<property name="RightHandJointName" value="RightHand" />  	<!-- This is for fixed weapons under the hand, needs changing for spawned melee  -->			
 			<property name="HandItem" value="handChefKnife"/>			
@@ -90,7 +91,6 @@
 			<property name="MoveSpeed" value="0.3"/> 
 			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
 			<property name="MoveSpeedPanic" value="1.1"/>
-			<property name="PainResistPerHit" value=".50"/>
 			<property name="PainResistPerHit" value=".5"/>
 			<property name="WalkType" value="7"/> <!-- This is for fixed type ranged weapons, needs changing for spawned ranged  -->
 			<property name="RightHandJointName" value="RightHand" />  <!-- This is for fixed weapons under the hand, needs changing for spawned ranged  -->	
@@ -286,6 +286,7 @@
 
 		<entity_class name="NPCBaker" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Baker.unity3d?BakerRagdoll_X"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -374,6 +375,7 @@
 		
 		<entity_class name="NPCNurse" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NurseNancy.unity3d?NurseNancy_X"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
@@ -493,6 +495,7 @@
 		
 		<entity_class name="NPCEveEmptyHand" extends="NPCNurse"> 
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Eve.unity3d?EveRagdoll2_X"/>
 			<property name="Names" value="Eve,Eva,Evelyn,Edie" />	
 			<property name="RightHandJointName" value="RightWeapon" />  
@@ -571,6 +574,7 @@
 
 		<entity_class name="NPCHeavyGuyEmptyHand" extends="NPCHumanMeleeTemplate"> 
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/HeavyGuy.unity3d?HeavyGuy2_X"/>
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="RightHandJointName" value="RightWeapon" />
@@ -659,6 +663,7 @@
 		</entity_class> 
 		<entity_class name="NPCCowboyEmptyHand" extends="NPCHumanMeleeTemplate"> 
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Rifleman.unity3d?CowboyBasic_X"/>	
 			<property name="Names" value="Hank,Hero,Homer,Guy" />
 			<property name="RightHandJointName" value="RightWeapon" />
@@ -760,6 +765,7 @@
 
 		<entity_class name="NPCHunter" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?HunterDark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -848,6 +854,7 @@
 
 		<entity_class name="NPCDelta" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Delta2Dark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -936,6 +943,7 @@
 
 		<entity_class name="NPCNationalGuard" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuard2Dark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -1024,6 +1032,7 @@
 
 		<entity_class name="NPCRanger" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?Ranger2Dark"/> <!-- Has a knife installed  -->
 			<property name="RightHandJointName" value="RightHand" />
 			<property name="HandItem" value="handChefKnife"/>
@@ -1112,6 +1121,7 @@
 		
 		<entity_class name="NPCArmyDoctor" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?ArmyDoctor2Dark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
@@ -1232,6 +1242,7 @@
 		
 		<entity_class name="NPCNationalGuardMedic" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?NationalGuardMedic2Dark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
@@ -1354,6 +1365,7 @@
 			<property name="Tags" value="entity,npc"/>
 			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
 			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/NPCSoldierz.unity3d?GhostDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
+			<property name="Faction" value="whiteriver"/>
 			<property name="SoundHurt" value="Player_Female/player2painlg"/>
 			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
 			<property name="SoundDeath" value="Player_Female/player2death"/>
