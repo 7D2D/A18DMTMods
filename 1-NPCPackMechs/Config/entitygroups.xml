@@ -1,0 +1,14 @@
+<configs>
+
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'mech')]" />
+
+	<append xpath="/entitygroups/entitygroup[ starts-with(@name, 'FriendlyAnimals')]">
+		<entity name="NPCMechDrone" prob="0.03" />
+		<entity name="NPCMechRustyDrone" prob="0.03" />
+		<entity name="NPCMechRobot" prob="0.03" />
+		<entity name="NPCMechRobotArmy" prob="0.03" />		
+		<entity name="NPCMechSphereI" prob="0.03" />
+		<entity name="NPCMechSphereII" prob="0.03" />
+		<entity name="NPCMechBee" prob="0.03" />
+	</append> 
+</configs>

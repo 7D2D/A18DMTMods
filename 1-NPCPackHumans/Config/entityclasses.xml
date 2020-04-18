@@ -1,13 +1,13 @@
 <configs>
-	<append xpath="/entity_classes">
 	
 <!--  Weapons can be spawned based on the entities RightHandJointName.  
 		For spawned Melee weapons and pistol type weapons, the standard child object name is: RightWeapon (or LeftWeapon for melee but not both)
 		For spawned Ranged Rifle type weapons, including xbows, the standard child object name is: Gunjoint	
 		For spawned longbows, the standard child object name is: LeftWeapon -->
 		
-		<!-- Walktypes: 1. Unarmed/Melee BruteWalk, 2. PistolWalk, 3. BowWalk, 4. Not Used/crawler, 5. Not Used/Crippled, 6. RifleWalk, 7. NormalWalk 8. Not Used/Spider, 9. Not Used/Behemoth -->
-		
+<!-- Walktypes: 1. Unarmed/Melee BruteWalk, 2. PistolWalk, 3. BowWalk, 4. Not Used/crawler, 5. Not Used/Crippled, 6. RifleWalk, 7. NormalWalk 8. Not Used/Spider, 9. Not Used/Behemoth -->
+
+	<append xpath="/entity_classes">		
 <!-- Melee and Ranged templates -->
 		
 		<entity_class name="NPCHumanMeleeTemplate" extends="humanMeleeMaleBanditTemplate">
@@ -25,18 +25,18 @@
 			<property name="WalkType" value="7"/>
 			<property name="RightHandJointName" value="RightHand" />  	<!-- This is for fixed weapons under the hand, needs changing for spawned melee  -->			
 			<property name="HandItem" value="handChefKnife"/>			
-<!--			<property name="PathingBlocks" value="PathingCube" />   commented out in the template due to performance hit.  Enable in a specific entity as desired -->
+			<!--<property name="PathingBlocks" value="PathingCube" />   commented out in the template due to performance hit.  Enable in a specific entity as desired -->
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="AITask-1" value="ApproachAndAttackSDX, Mods" data="class=Entity,0"/>
+			<property name="AITask-1" value="ApproachAndAttackSDX, Mods" data="class=EntityAlive,0"/>
 			<property name="AITask-2" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>
 			<property name="AITask-3" value="Look"/>
 			<property name="AITask-4" value="WanderSDX, Mods"/>
 			<property name="AITask-5" value="ApproachDistraction"/>
 			<property name="AITask-6" value="BreakBlock"/>
 			<property name="AITask-7" value="" />
-			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
-            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
-            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
+			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=EntityAlive"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=EntityAlive"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=EntityAlive,80"/> 
 			<property name="AITarget-4" value=""/>
 			<property name="MaxViewAngle" value="210"/>
 			<property name="SightRange" value="70"/>
@@ -57,25 +57,25 @@
 			<property name="ExperienceGain" value="1000"/> 
 			<property name="LootDropProb" value="1.0"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerNPC"/>	
-<!--			<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
+			<!--<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
 			<property name="Names" value="TemplateBob" />		
 			<property name="Buffs" value="buffNPCStatusCheck;buffStatusCheck01;buffNPCSanitationStatusCheck" />
-			  <!-- Food items and bins that this entity will eat, if using the right AI Task -->
-<!--		<property name="FoodItems" value="foodCornBread,foodCornOnTheCob"/> -->
+			<!-- Food items and bins that this entity will eat, if using the right AI Task -->
+			<!--<property name="FoodItems" value="foodCornBread,foodCornOnTheCob"/> -->
 			<property name="FoodBins" value="cntSecureStorageChest,cntStorageChest" />
-			  <!-- what it can drink out of -->
+			<!-- what it can drink out of -->
 			<property name="WaterBins" value="water,waterMoving,waterStaticBucket,waterMovingBucket,terrWaterPOI" />
-			  <!-- Default thirsty and hungry buffs -->
+			<!-- Default thirsty and hungry buffs -->
 			<property name="ThirstyBuffs" value="buffStatusThirsty1,buffStatusThirsty2" />
 			<property name="HungryBuffs" value="buffStatusHungry1,buffStatusHungry2" />
-			  <!-- Sanitation Buff: Aka, make 'em poop part. Add in  buffSanitationStatusCheck in the Buffs entry here to enable. -->
+			<!-- Sanitation Buff: Aka, make 'em poop part. Add in  buffSanitationStatusCheck in the Buffs entry here to enable. -->
 			<property name="SanitationBuffs" value="buffStatusNPCSanitation1,buffStatusNPCSanitation2" />
 			<property name="ToiletBlocks" value="cntToilet01,cntToilet02,cntToilet03" />
 			<property name="SanitationBlock" value="NPCPoop" /> <!-- Poop block. If ToiletBlocks is configured, it'll use those rather than generate this block. -->
 			<property name="Beds" value="mattressFlat" />
-<!--			<property name="BedTimeBuffs" value="buffAnimalChickenEgg" />
+			<!--<property name="BedTimeBuffs" value="buffAnimalChickenEgg" />
 			<property name="ProductionFinishedBuff" value="buffAnimalChickenEgg" />   Which buff is on the entity when its produced something -->
-			  <!-- This is the block it'll call home -->
+			 <!-- This is the block it'll call home -->
 			<property name="HomeBlocks" value="cntNPCHomeBlock"/>
 			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
@@ -95,17 +95,17 @@
 			<property name="WalkType" value="7"/> <!-- This is for fixed type ranged weapons, needs changing for spawned ranged  -->
 			<property name="RightHandJointName" value="RightHand" />  <!-- This is for fixed weapons under the hand, needs changing for spawned ranged  -->	
 			<property name="AIPathCostScale" value=".9, 1"/>
-<!--			<property name="PathingBlocks" value="PathingCube" />   commented out in the template due to performance hit.  Enable in a specific entity as desired -->
+			<!--<property name="PathingBlocks" value="PathingCube" />   commented out in the template due to performance hit.  Enable in a specific entity as desired -->
 			<property name="AITask-1" value="RangedAttackTargetSDX, Mods" data="itemType=0;attackPeriod=10"/> <!--  New class  -->
-			<property name="AITask-2" value="ApproachAndAttackSDX, Mods" data="class=Entity,0" />
+			<property name="AITask-2" value="ApproachAndAttackSDX, Mods" data="class=EntityAlive,0" />
 			<property name="AITask-3" value="Look"/>	
             <property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>
             <property name="AITask-5" value="WanderSDX, Mods"/>
-<!--			<property name="AITask-5" value="ApproachDistraction"/> -->
+			<!--<property name="AITask-5" value="ApproachDistraction"/> -->
             <property name="AITask-6" value="" />
-            <property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=Entity"/>  
-            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=Entity"/> 
-            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,80"/> 
+            <property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=EntityAlive"/>  
+            <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=EntityAlive"/> 
+            <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=EntityAlive,80"/> 
             <property name="AITarget-4" value="" />
 			<property name="MaxViewAngle" value="210"/>
 			<property name="SightRange" value="70"/>
@@ -127,7 +127,7 @@
 			<property name="ExperienceGain" value="1000"/> 
 			<property name="LootDropProb" value="1.0"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerNPC"/>	
-<!--			<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
+			<!--<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
 			<property name="Names" value="Bill,Mickey D" />		
 			<property name="Buffs" value="buffNPCStatusCheck;buffStatusCheck;buffNPCSanitationStatusCheck" />
 			<property name="FoodBins" value="cntSecureStorageChest,cntStorageChest" />
@@ -166,8 +166,8 @@
 		<entity_class name="NPCMinstrel" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
 			<property name="PhysicsBody" value="mixamoConvertedStandard"/>
-			<property name="NPCID" value="spheretest"/>
-			<property name="Faction" value="whiteriver"/>
+			<property name="NPCID" value="xythtest"/>
+			<property name="Faction" value="vault"/>
 			<property name="Tags" value="entity,npc"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="7"/>			
@@ -843,7 +843,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 
 		
-	<!--  Delta -->
+		<!--  Delta -->
 
 		<entity_class name="NPCDelta" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -931,7 +931,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 	
 	
-<!--  NationalGuard -->
+		<!--  NationalGuard -->
 
 		<entity_class name="NPCNationalGuard" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -1019,7 +1019,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 	
 	
-<!--  Ranger -->
+		<!--  Ranger -->
 
 		<entity_class name="NPCRanger" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -1227,7 +1227,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 		
 
-	<!--  NationalGuardMedic  -->
+		<!--  NationalGuardMedic  -->
 		
 		<entity_class name="NPCNationalGuardMedic" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -1347,7 +1347,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 	
 	
-	<!--  Ghost  -->
+		<!--  Ghost  -->
 		
 		<entity_class name="NPCGhost" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -1717,7 +1717,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 
 		
-                    <!--  RaiderRat  -->	
+		<!--  RaiderRat  -->	
 
 		<entity_class name="NPCRaiderRatEmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
@@ -1813,7 +1813,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 
 
-                   <!--  RaiderHumongous  -->	
+	    <!--  RaiderHumongous  -->	
 
 		<entity_class name="NPCRaiderHumongousEmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
@@ -1910,7 +1910,7 @@
 		</entity_class> 
 
                     
-                     <!--  RaiderBettie  -->
+		<!--  RaiderBettie  -->
 		
 		<entity_class name="NPCRaiderBettieEmptyHand" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -2033,7 +2033,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 
 
-                  <!--  RaiderGina  -->
+		<!--  RaiderGina  -->
 		
 		<entity_class name="NPCRaiderGinaEmptyHand" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -2156,7 +2156,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 
 
-                    <!--  RaiderHedy  -->
+		<!--  RaiderHedy  -->
 		
 		<entity_class name="NPCRaiderHedyEmptyHand" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -2279,7 +2279,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 
 
-                     <!--  RaiderJayne  -->
+		<!--  RaiderJayne  -->
 		
 		<entity_class name="NPCRaiderJayneEmptyHand" extends="NPCHumanMeleeTemplate">
 			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whiteriver"/>
@@ -2401,8 +2401,6 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 		
-		
-
 
 <!--   Guppy Soldiers  -->		
 		
@@ -2502,7 +2500,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 
 
-                   <!--  GupSoldier6  -->	
+		<!--  GupSoldier6  -->	
 
 		<entity_class name="NPCGupSoldier6EmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
@@ -2600,7 +2598,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 
 
-                   <!--  GupSoldier7  -->	
+		<!--  GupSoldier7  -->	
 
 		<entity_class name="NPCGupSoldier7EmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
@@ -2698,7 +2696,7 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
 		</entity_class> 
 
-                 <!--  GupSoldier8  -->	
+		<!--  GupSoldier8  -->	
 
 		<entity_class name="NPCGupSoldier8EmptyHand" extends="NPCHumanMeleeTemplate" >
 			<property name='Class' value='EntityAliveSDX, Mods' />
@@ -2799,7 +2797,7 @@
 
 <!--  Testing  -->
 
-<!--		<entity_class name="NPCTurret" extends="NPCHumanRangedTemplate">
+		<!--<entity_class name="NPCTurret" extends="NPCHumanRangedTemplate">
 			<property name="Mesh" value="#@modfolder:Resources/Turret.unity3d?MecTurret_X" />	
 			<property name="Tags" value="entity,mech"/>			
 			<property name="HasRagdoll" value="true"/>
