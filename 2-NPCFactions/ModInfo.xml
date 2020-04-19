@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="2-NPCFactions" />
+		<Description value="A modlet for adding faction based actions to NPCPacks" />
+		<Author value="Xyth" />
+		<Version value="18.4.1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

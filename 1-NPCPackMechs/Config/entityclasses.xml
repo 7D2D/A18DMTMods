@@ -31,7 +31,7 @@
 			<property name="RagdollOnDeathChance" value="0"/>
 			<property name="Mass" value="120"/>			
 			<property name="ExperienceGain" value="230"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="mechs"/>
 			<property name="HandItem" value="handDrone"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="AttackTimeoutDay" value="1.5"/>
@@ -100,7 +100,7 @@
 		</entity_class> 
 
 		<entity_class name="NPCMechRangedTemplate" extends="NPCMechMeleeTemplate">
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="mechs"/>
 			<property name="Tags" value="entity,npc,mech"/>
 			<property name="MoveSpeed" value="0.3"/> 
 			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
@@ -137,13 +137,13 @@
 		<entity_class name="NPCMechDrone" extends="NPCMechMeleeTemplate">
 			<property name="Mesh" value="#@modfolder(0-CreaturePackMechs):Resources/Drone.unity3d?Drone_X"/>	<!-- Free CC model by Willy Decarpentrie -->
 			<property name="Tags" value="entity,mech,npc"/>			
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="mechs"/>
 			<property name="HandItem" value="handDrone"/>
 		</entity_class>
 		
 		<entity_class name="NPCMechRustyDrone" extends="NPCMechMeleeTemplate" >
 			<property name="Tags" value="entity,mech,npc"/>
-			<property name="Faction" value="bandits"/>		
+			<property name="Faction" value="mechs"/>		
 		    <property name="ReplaceMaterial0" value="#@modfolder(0-CreaturePackMechs):Resources/RustyDroidMat.unity3d?RustyDroid"/>
 		</entity_class>
 			
@@ -151,7 +151,7 @@
 			<property name="Mesh" value="#@modfolder(0-CreaturePackMechs):Resources/Robot.unity3d?Robot_X" /> <!-- Free CC model by Willy Decarpentrie -->
 			<property name="Tags" value="entity,mech,npc"/>
 			<property name="PhysicsBody" value="RobotRig"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="mechs"/>
 			<property name="HandItem" value="handRobot"/>
 			<property name="SoundRandomTime" value="20.0"/>
 			<property name="SoundRandom" value="RobotRandom" />
@@ -177,7 +177,7 @@
 		<entity_class name="NPCMechRobotArmy" extends="NPCMechRobot" >
 			<property name="Mesh" value="#@modfolder(0-CreaturePackMechs):Resources/Robot.unity3d?Robot_X" />
 			<property name="Tags" value="entity,mech,npc"/>
-			<property name="Faction" value="bandits"/>		
+			<property name="Faction" value="mechs"/>		
 			<property name="HandItem" value="handRobotArmy"/>
 		    <property name="ReplaceMaterial0" value="#@modfolder(0-CreaturePackMechs):Resources/RobotArmyMat.unity3d?metal_albedo"/>
 		    <property name="ReplaceMaterial1" value="#@modfolder(0-CreaturePackMechs):Resources/RobotArmyMat.unity3d?paint_albedo"/>
@@ -188,7 +188,7 @@
 			<property name="Mesh" value="#@modfolder(0-CreaturePackMechs):Resources/Spheres.unity3d?SphereI_X" />	<!-- Free CC model by 3DHaupt -->
 			<property name="DeadBodyHitPoints" value="1000"/> 
 			<property name="Tags" value="entity,mech"/>
-			<property name="Faction" value="bandits"/>		
+			<property name="Faction" value="mechs"/>		
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Harvest" name="resourceMechanicalParts" tag="salvageHarvest" count="10"/> 
 			<drop event="Harvest" name="resourceScrapIron" tag="salvageHarvest" count="9"/>
@@ -207,7 +207,7 @@
 			<property name="Mesh" value="#@modfolder(0-CreaturePackMechs):Resources/Spheres.unity3d?SphereII_X" />
 			<property name="DeadBodyHitPoints" value="1000"/> 
 			<property name="Tags" value="entity,mech,npc"/>	
-			<property name="Faction" value="bandits"/>		
+			<property name="Faction" value="mechs"/>		
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="500"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
@@ -226,7 +226,7 @@
 			<property name="Class" value="EntityVulture"/>
 			<property name="Mesh" value="#@modfolder(0-CreaturePackMechs):Resources/MecBee.unity3d?Mecbee_X" /> <!--  Free CC model but cant find attribution yet  -->
 			<property name="Tags" value="entity,mech,npc"/>
-			<property name="Faction" value="bandits"/>		
+			<property name="Faction" value="mechs"/>		
 			<property name="HandItem" value="handMecBee"/>
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="SightRange" value="70"/>
@@ -262,4 +262,6 @@
 		</entity_class>
 
 	</append>
+	
+	
 </configs>

@@ -1,0 +1,48 @@
+
+<!--  Note:  Standards are lowercase in this file, don't be a Guppy :-)  -->
+
+<npc>
+		<append xpath="/npc/factions/faction[@name='undead']" >		
+			<relationship name="whisperers" value="like"/>
+		</append>
+		
+		<append xpath="/npc/factions" >	
+		
+			<faction name="whisperers">
+				<relationship name="trader" value="neutral"/>
+				<relationship name="undead" value="like"/>
+				<relationship name="*" value="hate"/>
+			</faction>
+			<faction name="vault">
+				<relationship name="trader" value="neutral"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="*" value="neutral"/>
+			</faction>
+	
+			
+<!--  How you might seperate soldiers into factions  -->
+		
+			<faction name="redteam">
+				<relationship name="*" value="neutral"/>
+				<relationship name="blueteam" value="hate"/>
+				<relationship name="greenteam" value="hate"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="bandits" value="hate"/>
+			</faction>
+			<faction name="blueteam">
+				<relationship name="*" value="neutral"/>
+				<relationship name="redteam" value="hate"/>
+				<relationship name="greenteam" value="hate"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="bandits" value="hate"/>
+			</faction>	
+			<faction name="greenteam">
+				<relationship name="*" value="neutral"/>
+				<relationship name="blueteam" value="hate"/>
+				<relationship name="redteam" value="hate"/>
+				<relationship name="undead" value="hate"/>
+				<relationship name="bandits" value="hate"/>
+			</faction>	
+	
+		</append>
+</npc>

@@ -1,4 +1,61 @@
 <configs>
+
+<!--  Edits to convert zombies to Faction based targeting for whisperers -->
+
+		<set xpath="//entity_class[starts-with(@name, 'zombieTemplate')]/property[@value='SetNearestEntityAsTarget']/@data">class=EntityPlayer,0,0,EntityAlive,0,0</set> 
+
+
+
+<!--  Lets get rid of the creaturepackHumans that are also in the NPC pack  -->
+		
+		<remove xpath="//entity_class[starts-with(@name, 'humanRaider')]" />
+		<remove xpath="//entity_class[starts-with(@name, 'humanDelta')]" />
+		<remove xpath="//entity_class[starts-with(@name, 'humanArmy')]" />
+		<remove xpath="//entity_class[starts-with(@name, 'humanMalePower')]" />		
+		<remove xpath="//entity_class[starts-with(@name, 'humanNational')]" />
+		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier01')]" />		
+		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier06')]" />	
+		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier07')]" />		
+		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier08')]" />			
+		
+		
+<!--  Edits to convert the remaining CreaturePackHumans to faction based targeting  -->
+
+		<!--<remove xpath="//entity_class[@name='humanMeleeMaleBanditTemplate']/property[@value='ApproachAndAttackTarget']" />
+		<remove xpath="//entity_class[@name='humanMeleeMaleBanditTemplate']/property[@value='SetNearestEntityAsTarget']" />
+		
+		<remove xpath="//entity_class[@name='humanRangedMaleBanditTemplate']/property[@value='ApproachAndAttackTarget']" />
+		<remove xpath="//entity_class[@name='humanRangedMaleBanditTemplate']/property[@value='SetNearestEntityAsTarget']" />
+		
+		<remove xpath="//entity_class[@name='humanMaleSurvivorTimidTemplate']/property[@value='ApproachAndAttackTarget']" />
+		<remove xpath="//entity_class[@name='humanMaleSurvivorTimidTemplate']/property[@value='SetNearestEntityAsTarget']" />
+		
+		<remove xpath="//entity_class[@name='humanMaleSurvivorTemplate']/property[@value='ApproachAndAttackTarget']" />
+		<remove xpath="//entity_class[@name='humanMaleSurvivorTemplate']/property[@value='SetNearestEntityAsTarget']" />
+		
+		<remove xpath="//entity_class[@name='humanMeleeMaleTraderTemplate']/property[@value='ApproachAndAttackTarget']" />
+		<remove xpath="//entity_class[@name='humanMeleeMaleTraderTemplate']/property[@value='SetNearestEntityAsTarget']" />
+		
+		<remove xpath="//entity_class[@name='humanRangedMaleTraderTemplate']/property[@value='ApproachAndAttackTarget']" />
+		<remove xpath="//entity_class[@name='humanRangedMaleTraderTemplate']/property[@value='SetNearestEntityAsTarget']" /> -->
+
+		<!--<insertAfter xpath="//entity_class[@name='humanMeleeMaleBanditTemplate']/property[@value='ApproachDistraction']" >		
+			<property name="AITask-5" value="ApproachAndAttackSDX, Mods" data="class=Entity,90"/>
+		</insertAfter>
+		<insertAfter xpath="//entity_class[@name='humanMeleeMaleBanditTemplate']/property[@value='BlockingTargetTask']" >		
+			<property name="AITarget-4" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,90"/> 
+		</insertAfter>
+		
+		<insertAfter xpath="//entity_class[@name='humanRangedMaleBanditTemplate']/property[@value='RangedAttackTarget']" >		
+			<property name="AITask-5" value="ApproachAndAttackSDX, Mods" data="class=Entity,90"/>
+		</insertAfter>
+		<insertAfter xpath="//entity_class[@name='humanRangedMaleBanditTemplate']/property[@value='BlockingTargetTask']" >		
+			<property name="AITarget-4" value="SetAsTargetNearestEnemySDX, Mods" data="class=Entity,90"/> 
+		</insertAfter> -->
+				
+		<!-- Dittos needed when I have time or someone helps or we just remove all these guys when using NPC pack -->
+		<!--  Note: DarkStar's Vault folks not included yet but there is a faction setup -->
+ 
 	
 <!--  Weapons can be spawned based on the entities RightHandJointName.  
 		For spawned Melee weapons and pistol type weapons, the standard child object name is: RightWeapon (or LeftWeapon for melee but not both)
@@ -2849,6 +2906,16 @@
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 			</effect_group>
 		</entity_class> -->
-
 	</append>
+		
+<!-- Edits to make a few NPC groups join factions other than whiteriver  -->
+
+		<set xpath="//entity_class[starts-with(@name, 'NPCRaider')]/property[@name='Faction']/@value">bandits</set>
+		<set xpath="//entity_class[starts-with(@name, 'NPCGhost')]/property[@name='Faction']/@value">whisperers</set>
+		<set xpath="//entity_class[starts-with(@name, 'NPCGupSoldier')]/property[@name='Faction']/@value">redteam</set>
+		<set xpath="//entity_class[starts-with(@name, 'NPCDelta')]/property[@name='Faction']/@value">blueteam</set>
+		<set xpath="//entity_class[starts-with(@name, 'NPCRanger')]/property[@name='Faction']/@value">blueteam</set>
+		<set xpath="//entity_class[starts-with(@name, 'NPCNational')]/property[@name='Faction']/@value">greenteam</set>
+		<set xpath="//entity_class[starts-with(@name, 'NPCArmy')]/property[@name='Faction']/@value">greenteam</set>
+
 </configs>

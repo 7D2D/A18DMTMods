@@ -1,5 +1,24 @@
 <configs>
 
+
+	<!--  If there not in entityclasses.xml then can be in here either.  -->   
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanDelta')]" />
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanArmy')]" />
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanMalePower')]" />
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanNational')]" />
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanRaider')]" />	
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier01')]" />
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier06')]" />	
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier07')]" />
+	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier08')]" />
+
+
+
+
+
+
+
+
 	<append xpath="/entitygroups"> <!-- Not sure what groups we need yet, making placeholders   -->
 	
 		<entitygroup name="NPCMeleeAll">

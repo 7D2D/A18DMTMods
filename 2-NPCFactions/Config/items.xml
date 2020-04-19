@@ -1,5 +1,17 @@
 ﻿<configs>
+
+<!-- Relationship Values Chart 
+
+	< 200 =  Hate
+	< 400 =  Dislike
+	< 600 =  Neutral	
+	< 800 =  Like
+	< 1001 = Love
+	1001+ Leader	-->
+
 	<append xpath="/items">
+	
+<!-- These faction schematics change your faction completely.  All other factions see you as this new faction  -->	
   
 		<item name="MechFactionSchematic">
 		  <property name="Extends" value="schematicMaster" />
@@ -17,15 +29,13 @@
 		  <property name="CreativeMode" value="Player" />
 		  <property name="CustomIcon" value="schematicMaster" />
 		  <effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ChangeFactionSDX, Mods" value="vaultdwellers" />
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ChangeFactionSDX, Mods" value="vault" />
 		  </effect_group>
 		</item>
 
-<!--  Join a team!  -->
-
 		<item name="RedteamFactionSchematic">
 		  <property name="Extends" value="schematicMaster" />
-		  <property name="DescriptionKey" value="RedTeamFactionSchematicDesc" />
+		  <property name="DescriptionKey" value="RedteamFactionSchematicDesc" />
 		  <property name="CreativeMode" value="Player" />
 		  <property name="CustomIcon" value="schematicMaster" />
 		  <effect_group tiered="false">
@@ -35,7 +45,7 @@
 
 		<item name="BlueteamFactionSchematic">
 		  <property name="Extends" value="schematicMaster" />
-		  <property name="DescriptionKey" value="BlueTeamFactionSchematicDesc" />
+		  <property name="DescriptionKey" value="BlueteamFactionSchematicDesc" />
 		  <property name="CreativeMode" value="Player" />
 		  <property name="CustomIcon" value="schematicMaster" />
 		  <effect_group tiered="false">
@@ -45,7 +55,7 @@
 		
 		<item name="GreenteamFactionSchematic">
 		  <property name="Extends" value="schematicMaster" />
-		  <property name="DescriptionKey" value="GreenTeamFactionSchematicDesc" />
+		  <property name="DescriptionKey" value="GreenteamFactionSchematicDesc" />
 		  <property name="CreativeMode" value="Player" />
 		  <property name="CustomIcon" value="schematicMaster" />
 		  <effect_group tiered="false">
@@ -53,7 +63,7 @@
 		  </effect_group>
 		</item>	
 		
-<!-- Adds or subtracts 100 pointa to your faction for these groups  -->
+<!-- These schematics adds or subtracts 100 relationship points to your relationship with these factions.  You still remain in your own unique faction.  -->
 
 		<item name="MechPositiveFactionSchematic">
 		  <property name="Extends" value="schematicMaster" />
@@ -61,7 +71,7 @@
 		  <property name="CreativeMode" value="Player" />
 		  <property name="CustomIcon" value="schematicMaster" />
 		  <effect_group tiered="false">
-			  <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyFactionSDX, Mods" target="self" faction="mech" value="100" /> 
+			  <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyFactionSDX, Mods" target="self" faction="mechs" value="100" /> 
 		  </effect_group>
 		</item>
 
@@ -71,7 +81,7 @@
 		  <property name="CreativeMode" value="Player" />
 		  <property name="CustomIcon" value="schematicMaster" />
 		  <effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyFactionSDX, Mods" target="self" faction="mech" value="-100" />
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyFactionSDX, Mods" target="self" faction="mechs" value="-100" />
 		  </effect_group>
 		</item>
 		
