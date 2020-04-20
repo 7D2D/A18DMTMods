@@ -7,7 +7,6 @@
 <!-- Edits to make a few NPC groups join factions other than whiteriver  -->
 
 		<set xpath="//entity_class[starts-with(@name, 'NPCRaider')]/property[@name='Faction']/@value">bandits</set>
-		<set xpath="//entity_class[starts-with(@name, 'NPCGhost')]/property[@name='Faction']/@value">whisperers</set>
 		<set xpath="//entity_class[starts-with(@name, 'NPCGupSoldier')]/property[@name='Faction']/@value">redteam</set>
 		<set xpath="//entity_class[starts-with(@name, 'NPCDelta')]/property[@name='Faction']/@value">blueteam</set>
 		<set xpath="//entity_class[starts-with(@name, 'NPCRanger')]/property[@name='Faction']/@value">blueteam</set>

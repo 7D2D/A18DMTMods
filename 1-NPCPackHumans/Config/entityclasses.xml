@@ -2457,6 +2457,642 @@
 			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
+		</entity_class> 	
+
+<!--  Whisperers  -->
+
+
+		<entity_class name="NPCWhispererBeta" extends="NPCHumanMeleeTemplate" >
+			<property name='Class' value='EntityAliveSDX, Mods' />
+			<property name="NPCID" value="spheretest"/>
+			<property name="Faction" value="whisperers"/>
+			<property name="Tags" value="entity,npc"/>
+			<property name="Mass" value="150"/>
+			<property name="WalkType" value="7"/>			
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererBDark"/> 
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>
+			<property name="MoveSpeed" value="0.3"/> 
+			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
+			<property name="MoveSpeedPanic" value="1.4"/>
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 
+
+		<entity_class name="NPCWhispererBetaClub" extends="NPCWhispererBeta"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhispererBetaKnife" extends="NPCWhispererBeta"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererBetaSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererBDark"/>
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererBetaAK47" extends="NPCWhispererBetaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhispererBetaHunter" extends="NPCWhispererBetaSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+            <property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCWhispererBetaPistol" extends="NPCWhispererBetaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCWhispererBetaXBow" extends="NPCWhispererBetaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererBetaBow" extends="NPCWhispererBetaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 
+		
+		<entity_class name="NPCWhispererBetaShotty" extends="NPCWhispererBetaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
+		</entity_class> 
+
+		<!--  Whisperer  -->		
+		<entity_class name="NPCWhisperer" extends="NPCHumanMeleeTemplate" >
+			<property name='Class' value='EntityAliveSDX, Mods' />
+			<property name="NPCID" value="spheretest"/>
+			<property name="Faction" value="whisperers"/>
+			<property name="Tags" value="entity,npc"/>
+			<property name="Mass" value="150"/>
+			<property name="WalkType" value="7"/>			
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererDark"/> 
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>
+			<property name="MoveSpeed" value="0.3"/> 
+			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
+			<property name="MoveSpeedPanic" value="1.4"/>
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 
+
+		<entity_class name="NPCWhispererClub" extends="NPCWhisperer"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhispererKnife" extends="NPCWhisperer"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererDark"/>
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererAK47" extends="NPCWhispererSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhispererHunter" extends="NPCWhispererSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+            <property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCWhispererPistol" extends="NPCWhispererSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCWhispererXBow" extends="NPCWhispererSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererBow" extends="NPCWhispererSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 
+		
+		<entity_class name="NPCWhispererShotty" extends="NPCWhispererSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
+		</entity_class> 
+
+		<!--  Whisperer2 -->
+	
+		<entity_class name="NPCWhisperer2" extends="NPCHumanMeleeTemplate" >
+			<property name='Class' value='EntityAliveSDX, Mods' />
+			<property name="NPCID" value="spheretest"/>
+			<property name="Faction" value="whisperers"/>
+			<property name="Tags" value="entity,npc"/>
+			<property name="Mass" value="150"/>
+			<property name="WalkType" value="7"/>			
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?Whisperer2Dark"/> 
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>
+			<property name="MoveSpeed" value="0.3"/> 
+			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
+			<property name="MoveSpeedPanic" value="1.4"/>
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 
+
+		<entity_class name="NPCWhisperer2Club" extends="NPCWhisperer2"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhisperer2Knife" extends="NPCWhisperer2"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhisperer2SMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?Whisperer2Dark"/>
+			<property name="Names" value="Franky,Fabien,Felix,Finn,Franklin, Finnegan,Forrest,Floyd,Filip,Ford" />	
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhisperer2AK47" extends="NPCWhisperer2SMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhisperer2Hunter" extends="NPCWhisperer2SMG"> 
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+            <property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCWhisperer2Pistol" extends="NPCWhisperer2SMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCWhisperer2XBow" extends="NPCWhisperer2SMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhisperer2Bow" extends="NPCWhisperer2SMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 
+		
+		<entity_class name="NPCWhisperer2Shotty" extends="NPCWhisperer2SMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/>			
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPumpShotgun,handChefKnife,ammoNPCShotgunShell"/> 
+		</entity_class> 
+
+		<!--  WhispererAlpha  -->
+		
+		<entity_class name="NPCWhispererAlpha" extends="NPCHumanMeleeTemplate">
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererADark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<property name="SoundGiveUp" value="Player_Female/player2stamina"/>
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 
+					
+		<entity_class name="NPCWhispererAlphaClub" extends="NPCWhispererAlpha"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhispererAlphaKnife" extends="NPCWhispererAlpha"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererAlphaSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererADark"/> 
+			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<property name="SoundGiveUp" value="Player_Female/player2stamina"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererAlphaAK47" extends="NPCWhispererAlphaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+
+		<entity_class name="NPCWhispererAlphaHunter" extends="NPCWhispererAlphaSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+             <property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCWhispererAlphaPistol" extends="NPCWhispererAlphaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCWhispererAlphaXBow" extends="NPCWhispererAlphaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererAlphaBow" extends="NPCWhispererAlphaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 		
+
+		<!--  WhispererGamma  -->
+		
+		<entity_class name="NPCWhispererGamma" extends="NPCHumanMeleeTemplate">
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererGDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<property name="SoundGiveUp" value="Player_Female/player2stamina"/>
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 
+					
+		<entity_class name="NPCWhispererGammaClub" extends="NPCWhispererGamma"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhispererGammaKnife" extends="NPCWhispererGamma"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererGammaSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererGDark"/> 
+			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<property name="SoundGiveUp" value="Player_Female/player2stamina"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererGammaAK47" extends="NPCWhispererGammaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+
+		<entity_class name="NPCWhispererGammaHunter" extends="NPCWhispererGammaSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+             <property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCWhispererGammaPistol" extends="NPCWhispererGammaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCWhispererGammaXBow" extends="NPCWhispererGammaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererGammaBow" extends="NPCWhispererGammaSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
+		</entity_class> 		
+
+		<!--  WhispererFemale  -->
+		
+		<entity_class name="NPCWhispererFemale" extends="NPCHumanMeleeTemplate">
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererFemaleDark"/> <!-- Emptyhand version, non standard name, proving i'm not OCD  -->
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<property name="SoundGiveUp" value="Player_Female/player2stamina"/>
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="HandItem" value="handEmpty"/>
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class> 
+					
+		<entity_class name="NPCWhispererFemaleClub" extends="NPCWhispererFemale"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditClubWood"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditClubWood"/> 
+		</entity_class>
+		
+		<entity_class name="NPCWhispererFemaleKnife" extends="NPCWhispererFemale"> 
+			<property name="Tags" value="entity,npc"/> <property name="Faction" value="whisperers"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="meleeBanditKnifeIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="meleeBanditKnifeIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererFemaleSMG" extends="NPCHumanRangedTemplate"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Whispererz.unity3d?WhispererFemaleDark"/> 
+			<property name="Names" value="Nancy,Nan,Nanny,Nanna,Ratchet,Nightingale" />	
+			<property name="WalkType" value="6"/> <!-- Walktype for rifles  -->
+			<property name="RightHandJointName" value="Gunjoint" />  <!--  Rifle spawn point  -->
+			<property name="SoundHurt" value="Player_Female/player2painlg"/>
+			<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>
+			<property name="SoundDeath" value="Player_Female/player2death"/>
+			<property name="SoundStamina" value="Player_Female/player2stamina"/>
+			<property name="SoundDrownPain" value="Player_Female/player2drownpain"/>
+			<property name="SoundWaterSurface" value="Player_Female/player2drownsurface"/>
+			<property name="SoundDrownDeath" value="Player_Female/player2drowndeath"/>
+			<property name="SoundJump" value="Player_Male/player2Jump"/>
+			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
+			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
+			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+			<property name="SoundRandom" value="Player_Female/player2stamina" />
+			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundAlert" value="Player_Female/player2stamina"/>
+			<property name="SoundAttack" value="Player_Female/player2stamina"/>
+			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<property name="SoundGiveUp" value="Player_Female/player2stamina"/>
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditSMG5,handChefKnife,ammoNPC9mmBulletBall,medicalBandage"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererFemaleAK47" extends="NPCWhispererFemaleSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="RightHandJointName" value="Gunjoint" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditAk47,handChefKnife,ammoNPC762mmBulletBall"/> 
+		</entity_class>
+
+		<entity_class name="NPCWhispererFemaleHunter" extends="NPCWhispererFemaleSMG"> 
+            <property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+             <property name="WalkType" value="6"/> 
+            <property name="RightHandJointName" value="Gunjoint" />  
+            <property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/>
+            <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditHuntingRifle,handChefKnife,ammoNPC762mmBulletAP"/> 
+        </entity_class>    		
+		
+		<entity_class name="NPCWhispererFemalePistol" extends="NPCWhispererFemaleSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="2"/> <!-- Walktype for Pistols  -->
+			<property name="RightHandJointName" value="RightWeapon" />  
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,handChefKnife,ammoNPC9mmBulletBall"/> 
+		</entity_class>			
+		
+		<entity_class name="NPCWhispererFemaleXBow" extends="NPCWhispererFemaleSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="6"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditXBow,handChefKnife,ammoNPCCrossbowBoltIron"/> 
+		</entity_class>	
+		
+		<entity_class name="NPCWhispererFemaleBow" extends="NPCWhispererFemaleSMG"> 
+			<property name="Tags" value="entity,npc,ranged"/> <property name="Faction" value="whisperers"/>
+			<property name="WalkType" value="3"/> 
+			<property name="RightHandJointName" value="LeftWeapon" />  <!--  Bows go in lefthand  -->
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/>
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditBow,handChefKnife,ammoNPCArrowIron"/> 
 		</entity_class> 		
 
 <!--   Guppy Soldiers  -->		
