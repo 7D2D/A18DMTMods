@@ -90,7 +90,8 @@
 			<property name="AITask-4" value="WanderSDX, Mods"/>
 			<property name="AITask-5" value="ApproachDistraction"/>
 			<property name="AITask-6" value="BreakBlock"/>
-			<property name="AITask-7" value="" />
+			<property name="AITask-7" value="Territorial"/>
+			<property name="AITask-8" value="" />
 			<property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=EntityAlive"/>  
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=EntityAlive"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=EntityAlive,80"/> 
@@ -158,8 +159,9 @@
 			<property name="AITask-3" value="Look"/>	
             <property name="AITask-4" value="ApproachAndFollowTargetSDX, Mods" data="incentives=Leader"/>
             <property name="AITask-5" value="WanderSDX, Mods"/>
+			<property name="AITask-6" value="Territorial"/>
 			<!--<property name="AITask-5" value="ApproachDistraction"/> -->
-            <property name="AITask-6" value="" />
+            <property name="AITask-7" value="" />
             <property name="AITarget-1" value="SetAsTargetIfHurtSDX, Mods" data="class=EntityAlive"/>  
             <property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, Mods" data="class=EntityAlive"/> 
             <property name="AITarget-3" value="SetAsTargetNearestEnemySDX, Mods" data="class=EntityAlive,80"/> 
