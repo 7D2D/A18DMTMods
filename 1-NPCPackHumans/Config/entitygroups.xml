@@ -9,7 +9,7 @@
 	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanRaider')]" />	
 	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier01')]" />
 	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier06')]" />	
-	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier07')]" />
+<!--	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier07')]" /> -->
 	<remove xpath="//entitygroup/entity[starts-with(@name, 'humanGuppySoldier08')]" />
 
 

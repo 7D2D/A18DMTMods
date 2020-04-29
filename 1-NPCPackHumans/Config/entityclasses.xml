@@ -15,7 +15,7 @@
 		<remove xpath="//entity_class[starts-with(@name, 'humanNational')]" />
 		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier01')]" />		
 		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier06')]" />	
-		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier07')]" />		
+		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier07')]" />	
 		<remove xpath="//entity_class[starts-with(@name, 'humanGuppySoldier08')]" />			
 		
 		
