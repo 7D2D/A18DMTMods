@@ -520,7 +520,7 @@
 			<entity name="NPCWhisperer2Pistol" prob="0.03" /> 
 			<entity name="NPCWhisperer2XBow" prob="0.03" />
 			<entity name="NPCWhisperer2Bow" prob="0.03" />
-			<entity name="NPCWhispererAlpha" prob="0.03" />
+<!--			<entity name="NPCWhispererAlpha" prob="0.03" />
 			<entity name="NPCWhispererAlphaClub" prob="0.03" />
 			<entity name="NPCWhispererAlphaKnife" prob="0.03" />
 			<entity name="NPCWhispererAlphaSMG" prob="0.03" />
@@ -528,7 +528,7 @@
 			<entity name="NPCWhispererAlphaHunter" prob="0.03" />
 			<entity name="NPCWhispererAlphaPistol" prob="0.03" /> 
 			<entity name="NPCWhispererAlphaXBow" prob="0.03" />
-			<entity name="NPCWhispererAlphaBow" prob="0.03" />
+			<entity name="NPCWhispererAlphaBow" prob="0.03" /> -->
 			<entity name="NPCWhispererGamma" prob="0.03" />
 			<entity name="NPCWhispererGammaClub" prob="0.03" />
 			<entity name="NPCWhispererGammaKnife" prob="0.03" />
@@ -577,7 +577,7 @@
 			<entity name="NPCWhisperer2Pistol" prob="0.03" /> 
 			<entity name="NPCWhisperer2XBow" prob="0.03" />
 			<entity name="NPCWhisperer2Bow" prob="0.03" />
-			<entity name="NPCWhispererAlpha" prob="0.03" />
+<!--			<entity name="NPCWhispererAlpha" prob="0.03" />
 			<entity name="NPCWhispererAlphaClub" prob="0.03" />
 			<entity name="NPCWhispererAlphaKnife" prob="0.03" />
 			<entity name="NPCWhispererAlphaSMG" prob="0.03" />
@@ -585,7 +585,7 @@
 			<entity name="NPCWhispererAlphaHunter" prob="0.03" />
 			<entity name="NPCWhispererAlphaPistol" prob="0.03" /> 
 			<entity name="NPCWhispererAlphaXBow" prob="0.03" />
-			<entity name="NPCWhispererAlphaBow" prob="0.03" />
+			<entity name="NPCWhispererAlphaBow" prob="0.03" /> -->
 			<entity name="NPCWhispererGamma" prob="0.03" />
 			<entity name="NPCWhispererGammaClub" prob="0.03" />
 			<entity name="NPCWhispererGammaKnife" prob="0.03" />
@@ -633,7 +633,7 @@
 			<entity name="NPCWhisperer2Pistol" prob="0.03" /> 
 			<entity name="NPCWhisperer2XBow" prob="0.03" />
 			<entity name="NPCWhisperer2Bow" prob="0.03" />
-			<entity name="NPCWhispererAlpha" prob="0.03" />
+<!--			<entity name="NPCWhispererAlpha" prob="0.03" />
 			<entity name="NPCWhispererAlphaClub" prob="0.03" />
 			<entity name="NPCWhispererAlphaKnife" prob="0.03" />
 			<entity name="NPCWhispererAlphaSMG" prob="0.03" />
@@ -641,7 +641,7 @@
 			<entity name="NPCWhispererAlphaHunter" prob="0.03" />
 			<entity name="NPCWhispererAlphaPistol" prob="0.03" /> 
 			<entity name="NPCWhispererAlphaXBow" prob="0.03" />
-			<entity name="NPCWhispererAlphaBow" prob="0.03" />
+			<entity name="NPCWhispererAlphaBow" prob="0.03" /> -->
 			<entity name="NPCWhispererGamma" prob="0.03" />
 			<entity name="NPCWhispererGammaClub" prob="0.03" />
 			<entity name="NPCWhispererGammaKnife" prob="0.03" />
@@ -690,7 +690,7 @@
 			<entity name="NPCWhisperer2Pistol" prob="0.03" /> 
 			<entity name="NPCWhisperer2XBow" prob="0.03" />
 			<entity name="NPCWhisperer2Bow" prob="0.03" />
-			<entity name="NPCWhispererAlpha" prob="0.03" />
+<!--			<entity name="NPCWhispererAlpha" prob="0.03" />
 			<entity name="NPCWhispererAlphaClub" prob="0.03" />
 			<entity name="NPCWhispererAlphaKnife" prob="0.03" />
 			<entity name="NPCWhispererAlphaSMG" prob="0.03" />
@@ -698,7 +698,7 @@
 			<entity name="NPCWhispererAlphaHunter" prob="0.03" />
 			<entity name="NPCWhispererAlphaPistol" prob="0.03" /> 
 			<entity name="NPCWhispererAlphaXBow" prob="0.03" />
-			<entity name="NPCWhispererAlphaBow" prob="0.03" />
+			<entity name="NPCWhispererAlphaBow" prob="0.03" /> -->
 			<entity name="NPCWhispererGamma" prob="0.03" />
 			<entity name="NPCWhispererGammaClub" prob="0.03" />
 			<entity name="NPCWhispererGammaKnife" prob="0.03" />
@@ -749,7 +749,7 @@
 			<entity name="NPCWhisperer2Pistol" prob="0.03" /> 
 			<entity name="NPCWhisperer2XBow" prob="0.03" />
 			<entity name="NPCWhisperer2Bow" prob="0.03" />
-			<entity name="NPCWhispererAlpha" prob="0.03" />
+<!--			<entity name="NPCWhispererAlpha" prob="0.03" />
 			<entity name="NPCWhispererAlphaClub" prob="0.03" />
 			<entity name="NPCWhispererAlphaKnife" prob="0.03" />
 			<entity name="NPCWhispererAlphaSMG" prob="0.03" />
@@ -757,7 +757,7 @@
 			<entity name="NPCWhispererAlphaHunter" prob="0.03" />
 			<entity name="NPCWhispererAlphaPistol" prob="0.03" /> 
 			<entity name="NPCWhispererAlphaXBow" prob="0.03" />
-			<entity name="NPCWhispererAlphaBow" prob="0.03" />
+			<entity name="NPCWhispererAlphaBow" prob="0.03" /> -->
 			<entity name="NPCWhispererGamma" prob="0.03" />
 			<entity name="NPCWhispererGammaClub" prob="0.03" />
 			<entity name="NPCWhispererGammaKnife" prob="0.03" />
@@ -807,7 +807,7 @@
 			<entity name="NPCWhisperer2Pistol" prob="0.03" /> 
 			<entity name="NPCWhisperer2XBow" prob="0.03" />
 			<entity name="NPCWhisperer2Bow" prob="0.03" />
-			<entity name="NPCWhispererAlpha" prob="0.03" />
+<!--			<entity name="NPCWhispererAlpha" prob="0.03" />
 			<entity name="NPCWhispererAlphaClub" prob="0.03" />
 			<entity name="NPCWhispererAlphaKnife" prob="0.03" />
 			<entity name="NPCWhispererAlphaSMG" prob="0.03" />
@@ -815,7 +815,7 @@
 			<entity name="NPCWhispererAlphaHunter" prob="0.03" />
 			<entity name="NPCWhispererAlphaPistol" prob="0.03" /> 
 			<entity name="NPCWhispererAlphaXBow" prob="0.03" />
-			<entity name="NPCWhispererAlphaBow" prob="0.03" />
+			<entity name="NPCWhispererAlphaBow" prob="0.03" /> -->
 			<entity name="NPCWhispererGamma" prob="0.03" />
 			<entity name="NPCWhispererGammaClub" prob="0.03" />
 			<entity name="NPCWhispererGammaKnife" prob="0.03" />

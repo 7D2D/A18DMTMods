@@ -238,7 +238,22 @@
 			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 		</entity_class> 
-
+		<entity_class name="NPCNeo" extends="NPCHumanMeleeTemplate" >
+			<property name='Class' value='EntityAliveSDX, Mods' />
+			<property name="PhysicsBody" value="mixamoConvertedStandard"/>
+			<property name="NPCID" value="xythtest"/>
+			<property name="Faction" value="vault"/>
+			<property name="Tags" value="entity,npc"/>
+			<property name="Mass" value="150"/>
+			<property name="WalkType" value="7"/>			
+			<property name="Names" value="Neo" />	
+			<property name="Mesh" value="#@modfolder(0-CreaturePackHumans):Resources/Neo.unity3d?Neo_X"/> 
+			<property name="MoveSpeed" value="0.3"/> 
+			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
+			<property name="MoveSpeedPanic" value="1.4"/>
+			<property name="HireCurrency" value="casinoCoin" />
+			<property name="HireCost" value="1000" />
+		</entity_class>
 		<!--  Farmer  -->	
 
 		<entity_class name="NPCFarmer" extends="NPCHumanMeleeTemplate" >
