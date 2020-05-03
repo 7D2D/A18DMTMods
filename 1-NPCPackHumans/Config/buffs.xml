@@ -106,7 +106,13 @@
 		</effect_group>
 	</buff>	
 	
-	
+	<buff name="ragtest">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="ZombieWalkType1">
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="1.0"/>
+		</effect_group>
+	</buff>	
 	
 </append>
 </configs>
