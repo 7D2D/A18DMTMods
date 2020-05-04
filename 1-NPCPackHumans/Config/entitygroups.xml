@@ -48,7 +48,7 @@
 			<entity name="NPCRangerPistol" prob="0.01" /> 
 			<entity name="NPCRangerXBow" prob="0.01" />
 			<entity name="NPCRangerBow" prob="0.01" />
-<!--			<entity name="NPCHunter" prob="0.01" />
+			<entity name="NPCHunter" prob="0.01" />
 			<entity name="NPCHunterEmptyHand" prob="0.01" />
 			<entity name="NPCHunterClub" prob="0.01" />
 			<entity name="NPCHunterKnife" prob="0.01" />
@@ -67,7 +67,7 @@
 			<entity name="NPCGhostHunter" prob="0.01" />
 			<entity name="NPCGhostPistol" prob="0.01" />
 			<entity name="NPCGhostXBow" prob="0.01" />
-			<entity name="NPCGhostBow" prob="0.01" /> -->
+			<entity name="NPCGhostBow" prob="0.01" /> 
 			<entity name="NPCNationalGuardMedic" prob="0.01" />
 			<entity name="NPCNationalGuardMedicEmptyHand" prob="0.01" />
 			<entity name="NPCNationalGuardMedicClub" prob="0.01" />
@@ -316,7 +316,7 @@
 		<entity name="NPCRangerPistol" prob="0.003" /> 
 		<entity name="NPCRangerXBow" prob="0.003" />
 		<entity name="NPCRangerBow" prob="0.003" />
-<!--		<entity name="NPCHunter" prob="0.003" />
+		<entity name="NPCHunter" prob="0.003" />
 		<entity name="NPCHunterEmptyHand" prob="0.003" />
 		<entity name="NPCHunterClub" prob="0.003" />
 		<entity name="NPCHunterKnife" prob="0.003" />
@@ -335,7 +335,7 @@
 		<entity name="NPCGhostHunter" prob="0.003" />
 		<entity name="NPCGhostPistol" prob="0.003" />
 		<entity name="NPCGhostXBow" prob="0.003" />
-		<entity name="NPCGhostBow" prob="0.003" /> -->
+		<entity name="NPCGhostBow" prob="0.003" /> 
 		<entity name="NPCNationalGuardMedic" prob="0.003" />
 		<entity name="NPCNationalGuardMedicEmptyHand" prob="0.003" />
 		<entity name="NPCNationalGuardMedicClub" prob="0.003" />
@@ -382,7 +382,7 @@
 		<entity name="NPCRaiderPestPistol" prob="0.003" /> 
 		<entity name="NPCRaiderPestXBow" prob="0.003" />
 		<entity name="NPCRaiderPestBow" prob="0.003" />
-<!--		<entity name="NPCRaiderMotoEmptyHand" prob="0.003" />
+		<entity name="NPCRaiderMotoEmptyHand" prob="0.003" />
 		<entity name="NPCRaiderMotoClub" prob="0.003" />
 		<entity name="NPCRaiderMotoKnife" prob="0.003" />
 		<entity name="NPCRaiderMotoSMG" prob="0.003" />
@@ -390,7 +390,7 @@
 		<entity name="NPCRaiderMotoHunter" prob="0.003" />
 		<entity name="NPCRaiderMotoPistol" prob="0.003" />
 		<entity name="NPCRaiderMotoXBow" prob="0.003" />
-		<entity name="NPCRaiderMotoBow" prob="0.003" /> -->
+		<entity name="NPCRaiderMotoBow" prob="0.003" /> 
 		<entity name="NPCRaiderSluggerEmptyHand" prob="0.003" />
 		<entity name="NPCRaiderSluggerClub" prob="0.003" />
 		<entity name="NPCRaiderSluggerKnife" prob="0.003" />
@@ -409,7 +409,7 @@
 		<entity name="NPCRaiderHumongousPistol" prob="0.003" /> 
 		<entity name="NPCRaiderHumongousXBow" prob="0.003" />
 		<entity name="NPCRaiderHumongousBow" prob="0.003" />
-<!--		<entity name="NPCRaiderRatEmptyHand" prob="0.003" />
+		<entity name="NPCRaiderRatEmptyHand" prob="0.003" />
 		<entity name="NPCRaiderRatClub" prob="0.003" />
 		<entity name="NPCRaiderRatKnife" prob="0.003" />
 		<entity name="NPCRaiderRatSMG" prob="0.003" />
@@ -417,7 +417,7 @@
 		<entity name="NPCRaiderRatHunter" prob="0.003" />
 		<entity name="NPCRaiderRatPistol" prob="0.003" /> 
 		<entity name="NPCRaiderRatXBow" prob="0.003" />
-		<entity name="NPCRaiderRatBow" prob="0.003" /> -->
+		<entity name="NPCRaiderRatBow" prob="0.003" /> 
 		<entity name="NPCRaiderBettieEmptyHand" prob="0.003" />
 		<entity name="NPCRaiderBettieClub" prob="0.003" />
 		<entity name="NPCRaiderBettieKnife" prob="0.003" />
