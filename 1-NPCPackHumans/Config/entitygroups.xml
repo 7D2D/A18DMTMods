@@ -48,26 +48,6 @@
 			<entity name="NPCRangerPistol" prob="0.01" /> 
 			<entity name="NPCRangerXBow" prob="0.01" />
 			<entity name="NPCRangerBow" prob="0.01" />
-			<entity name="NPCHunter" prob="0.01" />
-			<entity name="NPCHunterEmptyHand" prob="0.01" />
-			<entity name="NPCHunterClub" prob="0.01" />
-			<entity name="NPCHunterKnife" prob="0.01" />
-			<entity name="NPCHunterSMG" prob="0.01" />
-			<entity name="NPCHunterAK47" prob="0.01" />
-			<entity name="NPCHunterRifle" prob="0.01" />
-			<entity name="NPCHunterPistol" prob="0.01" />
-			<entity name="NPCHunterXBow" prob="0.01" />
-			<entity name="NPCHunterBow" prob="0.01" />
-			<entity name="NPCGhost" prob="0.01" />
-			<entity name="NPCGhostEmptyHand" prob="0.01" />
-			<entity name="NPCGhostClub" prob="0.01" />
-			<entity name="NPCGhostKnife" prob="0.01" />
-			<entity name="NPCGhostSMG" prob="0.01" />
-			<entity name="NPCGhostAK47" prob="0.01" />
-			<entity name="NPCGhostHunter" prob="0.01" />
-			<entity name="NPCGhostPistol" prob="0.01" />
-			<entity name="NPCGhostXBow" prob="0.01" />
-			<entity name="NPCGhostBow" prob="0.01" /> 
 			<entity name="NPCNationalGuardMedic" prob="0.01" />
 			<entity name="NPCNationalGuardMedicEmptyHand" prob="0.01" />
 			<entity name="NPCNationalGuardMedicClub" prob="0.01" />
@@ -316,26 +296,6 @@
 		<entity name="NPCRangerPistol" prob="0.003" /> 
 		<entity name="NPCRangerXBow" prob="0.003" />
 		<entity name="NPCRangerBow" prob="0.003" />
-		<entity name="NPCHunter" prob="0.003" />
-		<entity name="NPCHunterEmptyHand" prob="0.003" />
-		<entity name="NPCHunterClub" prob="0.003" />
-		<entity name="NPCHunterKnife" prob="0.003" />
-		<entity name="NPCHunterSMG" prob="0.003" />
-		<entity name="NPCHunterAK47" prob="0.003" />
-		<entity name="NPCHunterRifle" prob="0.003" />
-		<entity name="NPCHunterPistol" prob="0.003" />
-		<entity name="NPCHunterXBow" prob="0.003" />
-		<entity name="NPCHunterBow" prob="0.003" />
-		<entity name="NPCGhost" prob="0.003" />
-		<entity name="NPCGhostEmptyHand" prob="0.003" />
-		<entity name="NPCGhostClub" prob="0.003" />
-		<entity name="NPCGhostKnife" prob="0.003" />
-		<entity name="NPCGhostSMG" prob="0.003" />
-		<entity name="NPCGhostAK47" prob="0.003" />
-		<entity name="NPCGhostHunter" prob="0.003" />
-		<entity name="NPCGhostPistol" prob="0.003" />
-		<entity name="NPCGhostXBow" prob="0.003" />
-		<entity name="NPCGhostBow" prob="0.003" /> 
 		<entity name="NPCNationalGuardMedic" prob="0.003" />
 		<entity name="NPCNationalGuardMedicEmptyHand" prob="0.003" />
 		<entity name="NPCNationalGuardMedicClub" prob="0.003" />
